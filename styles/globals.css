@@ -14,11 +14,11 @@
     animation-direction: alternate-reverse;
   }
   .mb-2 {
-    animation-duration: 4s;
+    animation-delay: 5s;
     animation-direction: alternate-reverse;
   }
   .mb-3 {
-    animation-delay: 6s;
+    animation-delay: 7s;
     animation-direction: alternate-reverse;
   }
 }
