@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Image from "next/image";
 
 export default function Document() {
     return (
@@ -12,10 +13,9 @@ export default function Document() {
                 />
                 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Quicksand:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
             </Head>
-            <body className="font-quick mx-auto bg-gradient-to-r from-[#ffeeee4e] to-[#f4dcff49] overflow-x-hidden ">
+            <body className="back font-quick mx-auto bg-[#ffffff] overflow-x-hidden">
                 <Main />
                 <NextScript />
-                {/* bg-[#ffeeff] */}
             </body>
         </Html>
     );

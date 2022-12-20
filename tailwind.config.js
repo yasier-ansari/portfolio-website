@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       animation: {
         text: 'text 5s ease infinite',
-        mainBlob: 'mainBlob 4s ease infinite'
+        mainBlob1: 'mainBlob 12s ease infinite',
+        mainBlob2: 'mainBlob2 8s ease alternate-reverse infinite',
+        mainBlob3: 'mainBlob3 8s ease alternate infinite'
+
+
       },
       keyframes: {
         text: {
@@ -23,10 +27,21 @@ module.exports = {
         },
         mainBlob: {
           "0%, 100%": { 'transform': "translate(0px, 0px) scale(1)" },
-          "25%": { 'transform': "translate(5px, 15px) scale(1.01)" },
-          "50%": { 'transform': "translate(-5px, 20px) scale(1)" },
+          "25%": { 'transform': "translate(50px, 55px) scale(1.01)" },
+          "50%": { 'transform': "translate(-25px, 20px) scale(1)" },
           "75%": { 'transform': "translate(-5px, -5px) scale(0.98)" },
-
+        },
+        mainBlob2: {
+          "0%, 100%": { 'transform': "translate(0px, 0px) scale(1)" },
+          "25%": { 'transform': "translate(-50px, 0px) scale(1.01)" },
+          "50%": { 'transform': "translate(-30px, -50px) scale(1)" },
+          "75%": { 'transform': "translate(-15px, 20px) scale(0.98)" },
+        },
+        mainBlob3: {
+          "0%, 100%": { 'transform': "translate(0px, 0px) scale(1)" },
+          "25%": { 'transform': "translate(50px, 0px) scale(1.01)" },
+          "50%": { 'transform': "translate(-20px, 20px) scale(1)" },
+          "75%": { 'transform': "translate(-50px, -5px) scale(0.98)" },
         }
       },
     },

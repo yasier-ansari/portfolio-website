@@ -3,22 +3,48 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    box-sizing: border-box;
-  }
-  a {
-    text-decoration: none;
-  }
-  .mb-1 {
-    animation-delay: 2s;
-    animation-direction: alternate-reverse;
-  }
-  .mb-2 {
-    animation-delay: 5s;
-    animation-direction: alternate-reverse;
-  }
-  .mb-3 {
-    animation-delay: 7s;
-    animation-direction: alternate-reverse;
-  }
+    * {
+        box-sizing: border-box;
+    }
+    a {
+        text-decoration: none;
+    }
+    .mb-1 {
+        animation-delay: 2s;
+    }
+    .mb-2 {
+        animation-delay: 5s;
+    }
+    .mb-3 {
+        animation-delay: 7s;
+    }
+    .tech {
+        @apply hover:bg-gradient-to-tr hover:from-[#cae3e3] hover:via-[#f2e3ff] hover:to-[#ffdccb] focus:bg-gradient-to-tr focus:from-[#cae3e3] focus:via-[#f2e3ff] focus:to-[#ffdccb];
+    }
+    .techWork {
+        @apply hover:bg-gradient-to-tr hover:from-[#ebffff] hover:via-[#f7edff] hover:to-[#ffeae0] focus:bg-gradient-to-tr focus:from-[#cae3e3] focus:via-[#f2e3ff] focus:to-[#ffdccb];
+    }
+    .land::before {
+        content: '';
+        position: absolute;
+        inset: 0px;
+        z-index: -100;
+        background-image: url('/header-gradient.svg'), url('/footer-gradient.svg');
+        background-repeat: no-repeat;
+        background-position: center top, center bottom;
+        background-size: 1400px;
+    }
+    #texture {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: -99;
+        width: 100%;
+        height: 100%;
+        /* height: calc(100vh + 200px); */
+        opacity: 0.25;
+        pointer-events: none;
+        transform: translateY(0px);
+        filter: contrast(120%) brightness(120%);
+    }
 }
