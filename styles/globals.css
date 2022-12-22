@@ -24,6 +24,12 @@
     .techWork {
         @apply hover:bg-gradient-to-tr hover:from-[#ebffff] hover:via-[#f7edff] hover:to-[#ffeae0] focus:bg-gradient-to-tr focus:from-[#cae3e3] focus:via-[#f2e3ff] focus:to-[#ffdccb];
     }
+    .iconClip {
+        -webkit-text-fill-color: transparent;
+    }
+    .cirGradient {
+        background: linear-gradient(120deg, #14b8a6 10%, #a855f7 45%, #f97316 100%);
+    }
     .land::before {
         content: '';
         position: absolute;

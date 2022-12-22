@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 // import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/ti'
 import { HiOutlineArrowLongRight, HiOutlineArrowLongLeft } from 'react-icons/hi2';
+import TechCard from '../components/TechCard';
 
 export default function Tech() {
     const data = [
@@ -125,6 +126,9 @@ export default function Tech() {
         },
     ];
     const [idNumber, setIdNumber] = useState(0);
+    const changeId = (id) => {
+        setIdNumber(id);
+    };
     const rightArrow = () => {
         if (idNumber + 1 >= data.length) {
             setIdNumber(0);
@@ -157,7 +161,7 @@ export default function Tech() {
                     <h2 className="bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-5xl font-black">
                         Tools I use
                     </h2>
-                    <p class="mt-8">
+                    <p className="mt-8">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, et. Placeat
                         quam quod blanditiis, dignissimos praesentium a provident ipsa. Quo officiis
                         perspiciatis soluta, possimus quidem esse quia assumenda voluptate
@@ -204,214 +208,9 @@ export default function Tech() {
                     </button>
                 </div>
                 <div className=" mt-12 pb-12 grid grid-cols-4 gap-8 w-[70%] mx-auto items-center justify-items-center justify-center place-content-center ">
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(0);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[0].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(1);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[1].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(2);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[2].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(3);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[3].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(4);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[4].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(5);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[5].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(6);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[6].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(7);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[7].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(8);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[8].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(9);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[9].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(10);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[10].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(11);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[11].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className="tech group relative p-4 h-20 w-20 tech rounded-xl "
-                        onClick={() => {
-                            setIdNumber(12);
-                        }}
-                    >
-                        <div className="">
-                            <Image
-                                src={data[12].main}
-                                fill
-                                className="
-                           group-hover:scale-[1.1] transition-all duration-700 object-contain p-3 rounded-2xl"
-                                alt="no"
-                            />
-                        </div>
-                    </div>
+                    {data.map(function (obj, i) {
+                        return <TechCard id={obj.id} main={obj.main} key={i} changeId={changeId} />;
+                    })}
                 </div>
             </main>
         </div>

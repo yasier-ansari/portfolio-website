@@ -11,7 +11,7 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className=" min-h-screen ">
-                <div className="w-[85%] mx-auto pt-16 ">
+                <div className=" mx-auto pt-16 ">
                     <div className="mt-12 mx-auto flex flex-col ">
                         {/* <div className="absolute top-20 right-72 " >
                             <div className="animate-mainBlob absolute top-0 right-40 w-20 h-20 rounded-full bg-[#FF5C00] mix-blend-multiply filter blur-2xl  opacity-30 " ></div>

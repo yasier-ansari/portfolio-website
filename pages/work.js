@@ -1,14 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { IoLogoReact } from 'react-icons/io5';
-import {
-    SiTypescript,
-    SiNextdotjs,
-    SiJavascript,
-    SiTailwindcss,
-    SiMongodb,
-    SiSolidity,
-} from 'react-icons/si';
+import WorkCard from '../components/WorkCard';
 
 export default function Work() {
     return (
@@ -31,7 +22,7 @@ export default function Work() {
                     </p>
                 </div>
                 <div className="mt-20 flex flex-col space-y-12 mx-auto items-center w-[75%]">
-                    <div className="flex h-40 techWork p-4 overflow-hidden rounded-3xl  ">
+                    {/* <div className="flex h-40 techWork p-4 overflow-hidden rounded-3xl  ">
                         <div class="relative basis-[45%] rounded-3xl overflow-hidden ">
                             <Image
                                 src="/pfpimg.jpeg"
@@ -114,7 +105,25 @@ export default function Work() {
                                 Temporibus
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <WorkCard
+                        title={'nKrypt'}
+                        description={'lorem ipsum dorem dolor sit amet consec tetur elit.'}
+                        arr={[null, 1, null, 1, null, 1, 1]}
+                        img={'/pfpimg.jpeg'}
+                    />
+                    <WorkCard
+                        title={'nKrypt'}
+                        description={'lorem ipsum dorem dolor sit amet consec tetur elit.'}
+                        arr={[1, 1, 1, 1, null, 1, 1]}
+                        img={'/pfpimg.jpeg'}
+                    />
+                    <WorkCard
+                        title={'nKrypt'}
+                        description={'lorem ipsum dorem dolor sit amet consec tetur elit.'}
+                        arr={[1, null, null, 1, 1, null, 1]}
+                        img={'/pfpimg.jpeg'}
+                    />
                 </div>
             </main>
         </div>

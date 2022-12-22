@@ -30,13 +30,13 @@ export default function Workinfo() {
                         />
                     </div>
                     <div className="mt-6 flex w-[50%] mx-auto flex-row space-x-4 justify-between">
-                        <SiJavascript className="h-[1.5rem] w-[1.5rem]" />
-                        <SiTypescript className="h-[1.5rem] w-[1.5rem]" />
-                        <IoLogoReact className="h-[1.5rem] w-[1.5rem]" />
-                        <SiNextdotjs className="h-[1.5rem] w-[1.5rem]" />
-                        <SiTailwindcss className="h-[1.5rem] w-[1.5rem]" />
-                        <SiMongodb className="h-[1.5rem] w-[1.5rem]" />
-                        <SiSolidity className="h-[1.5rem] w-[1.5rem]" />
+                        <SiJavascript className="h-[1rem] w-[1rem] rounded-[0.1rem] " />
+                        <SiTypescript className="h-[1rem] w-[1rem] rounded-[0.1rem] " />
+                        <IoLogoReact className="h-[1rem] w-[1rem] rounded-[0.1rem] " />
+                        <SiNextdotjs className="h-[1rem] w-[1rem] rounded-[0.1rem] " />
+                        <SiTailwindcss className="h-[1rem] w-[1rem] rounded-[0.1rem] " />
+                        <SiMongodb className="h-[1rem] w-[1rem] rounded-[0.1rem] " />
+                        <SiSolidity className="h-[1rem] w-[1rem] rounded-[0.1rem] " />
                     </div>
                 </div>
                 <div class="flex flex-col  mx-auto mt-4">
