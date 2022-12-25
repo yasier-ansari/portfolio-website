@@ -151,12 +151,6 @@ export default function Tech() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="min-h-screen">
-                {/* <div className="flex justify-between w-[55%] font-semibold font-nun mx-auto pt-28  ">
-                    <div className="px-5 rounded-xl bg-[#ffbce0] ">code</div>
-                    <div className="px-5 rounded-xl bg-[#cfffc8] ">daily</div>
-                    <div className="px-5 rounded-xl bg-[#ffaa5a53] ">design</div>
-                    <div className="px-5 rounded-xl bg-[#ebddff] ">zen</div>
-                </div> */}
                 <div className="px-20 pt-24 font-nun flex flex-col mx-auto">
                     <h2 className="bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-5xl font-black">
                         Tools I use

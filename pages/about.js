@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Head from 'next/head';
 import Image from 'next/image';
+import CategoryCard from '../components/About-cat';
 
 export default function About() {
     return (
@@ -13,11 +14,6 @@ export default function About() {
             <main className=" min-h-screen ">
                 <div className=" mx-auto pt-16 ">
                     <div className="mt-12 mx-auto flex flex-col ">
-                        {/* <div className="absolute top-20 right-72 " >
-                            <div className="animate-mainBlob absolute top-0 right-40 w-20 h-20 rounded-full bg-[#FF5C00] mix-blend-multiply filter blur-2xl  opacity-30 " ></div>
-                            <div className="animate-mainBlob absolute top-12 right-12 w-32 h-32 rounded-full bg-[#6DFF55] mix-blend-overlay filter blur-2xl  opacity-30 " ></div>
-                            <div className="animate-mainBlob absolute top-40 right-40 w-20 h-20 rounded-full bg-[#00C2FF] mix-blend-multiply filter blur-2xl  opacity-30 " ></div>
-                        </div> */}
                         <div className="mx-auto">
                             <Image
                                 src={'/pfpimg.jpeg'}
@@ -37,7 +33,7 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex items-center font-semibold justify-between w-[60%]  mx-auto mt-6 mb-8 ">
+                    {/* <div className="flex items-center font-semibold justify-between w-[60%]  mx-auto mt-6 mb-8 ">
                         <div className=" bg-gradient-to-r from-[#ffe4e4] to-[#ffe2d4] rounded-[0.89rem] px-3 text-[#cf3903]">
                             design
                         </div>
@@ -50,7 +46,8 @@ export default function About() {
                         <div className=" bg-gradient-to-l from-[#ffdaf9] to-[#ffdcdc] rounded-[0.89rem] px-3 text-[#690c58]">
                             web3
                         </div>
-                    </div>
+                    </div> */}
+                    <CategoryCard />
                     <div className=" mx-auto font-[450]">
                         <p className="mt-6 mb-12">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore
