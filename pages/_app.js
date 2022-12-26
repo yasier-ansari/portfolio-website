@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 function MyApp({ Component, pageProps }) {
     return (
         <main className="land relative z-10">
-            <svg id="texture">
+            {/* <svg id="texture">
                 <filter id="noise">
                     <feTurbulence
                         type="fractalNoise"
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
                     <feColorMatrix type="saturate" values="0"></feColorMatrix>
                 </filter>
                 <rect width="100%" height="100%" filter="url(#noise)"></rect>
-            </svg>
+            </svg> */}
             <Header />
             <Component {...pageProps} />
             <Footer />

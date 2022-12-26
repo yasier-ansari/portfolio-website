@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { BsBrightnessHigh } from 'react-icons/bs';
 import { useState, useEffect } from 'react';
-import { VscChromeClose, VscThreeBars } from 'react-icons/vsc';
 
 const Header = () => {
     let Links = [
@@ -32,9 +31,8 @@ const Header = () => {
                 isScrolled && 'bg-opacity-[0.4] shadow-md drop-shadow-lg '
             } font-medium duration-700 bg-opacity-[0.55] transition-all ease-in font-quick z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
         >
-            <div className="flex justify-between  md:space-x-0 md:flex items-center place-items-center md:justify-between py-3 md:px-10 px-12">
+            <div className="flex justify-between  md:space-x-0 md:flex items-center place-items-center md:justify-between py-3 md:px-10 px-8">
                 <div className="order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
-                    {/* <span className=" ml-1 px-2"> */}
                     <Link href={'/'} className="">
                         {' '}
                         <h3 className="bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-space text-xl font-bold">
@@ -43,25 +41,27 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="w-max md:order-8">
-                    <BsBrightnessHigh className="w-5 h-5 " />{' '}
+                    <BsBrightnessHigh className="w-4 md:w-5 h-4 md:h-5 " />{' '}
                 </div>
                 <div
                     onClick={() => setOpen(!open)}
-                    className="transition-all duration-500 ease-in order-3 text-lg  cursor-pointer items-center font-bold md:hidden"
+                    className="transition-all duration-500 ease-in order-3 text-lg flex flex-col space-y-[0.2rem]  cursor-pointer items-center font-bold md:hidden"
                 >
-                    {/* {!open ? ( */}
-                    <VscThreeBars
-                        name="open"
-                        className={` ${!open && 'block'} ${
-                            open && 'hidden'
-                        } transition-all duration-500 ease-in h-6 w-6`}
-                    />
-                    <VscChromeClose
-                        name="menu"
-                        className={`${!open && 'hidden'} ${
-                            open && 'block'
-                        } transition-all duration-500 ease-in stroke-1 h-6 w-6`}
-                    />
+                    <div
+                        className={` ${
+                            open && 'rotate-45 translate-y-[5px] '
+                        } relative rounded-xl origin-center transition-all duration-500 ease-in w-4 h-[0.1125rem] fill-black text-black bg-black`}
+                    ></div>
+                    <div
+                        className={` ${
+                            open && 'opacity-0 translate-x-5'
+                        } relative rounded-xl origin-center transition-all duration-1000 ease-out w-4 h-[0.1rem] fill-black text-black bg-black `}
+                    ></div>
+                    <div
+                        className={` ${
+                            open && '-rotate-45 -translate-y-[5px]'
+                        } relative rounded-xl origin-center transition-all duration-500 ease-in w-4 h-[0.1125rem] fill-black text-black bg-black`}
+                    ></div>
                     {/* <FaBars name={open ? 'close' : 'menu'} /> */}
                 </div>
                 <ul
