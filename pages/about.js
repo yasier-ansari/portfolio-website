@@ -18,7 +18,7 @@ export default function About() {
                                 src={'/pfpimg.jpeg'}
                                 height={150}
                                 width={150}
-                                className="rounded-2xl drop-shadow-md shadow-2xl border border-white"
+                                className="rounded-2xl drop-shadow-md shadow-2xl h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40 border border-white"
                                 alt="yasier ansari"
                                 priority
                             />

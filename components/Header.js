@@ -29,7 +29,7 @@ const Header = () => {
         <nav
             className={`${
                 isScrolled && 'bg-opacity-[0.4] shadow-md drop-shadow-lg '
-            } font-medium duration-700 bg-opacity-[0.55] transition-all ease-in font-quick z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
+            } font-medium duration-700 bg-opacity-[0.55] transition-all max-w-[1000px] ease-in font-quick z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
         >
             <div className="flex justify-between  md:space-x-0 md:flex items-center place-items-center md:justify-between py-3 md:px-10 px-8">
                 <div className="order-2 md:order-1 cursor-pointer flex items-center text-gray-800">

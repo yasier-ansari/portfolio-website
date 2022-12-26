@@ -58,15 +58,15 @@ export default function Workinfo() {
                         asperiores laboriosam sunt vero repudiandae libero. Maiores eos consequatur
                         itaque numquam voluptas adipisci ipsa voluptatum.
                     </p>
-                    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:space-x-12 lg:space-x-28 justify-around mt-8 mb-16">
-                        <a className="flex space-x-2 md:space-x-3 items-center">
+                    <div className="grid grid-cols md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-8 mb-16">
+                        <div className="flex mx-auto space-x-2 md:space-x-3 items-center">
                             <SiGithub className=" w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
-                            <p href="https://github.com/yasier-ansari"> source code </p>
-                        </a>
-                        <a className="flex space-x-2 md:space-x-3 items-center">
-                            <IoBrowsersOutline className=" w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
-                            <p href="https://github.com/yasier-ansari"> live website </p>
-                        </a>
+                            <p href="https://github.com/yasier-ansari">source code </p>
+                        </div>
+                        <div className="flex mx-auto space-x-2 md:space-x-3 items-center">
+                            <IoBrowsersOutline className=" w-[0.73rem] h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
+                            <p href="https://github.com/yasier-ansari">live website </p>
+                        </div>
                     </div>
                     <div className="relative w-[60%] md:w-[55%] xl:w-[50%] mx-auto h-28 md:h-40 xl:h-52 -mb-6 md:mb-0 xl:mb-12  ">
                         <Image
