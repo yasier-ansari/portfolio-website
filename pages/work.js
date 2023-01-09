@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import WorkCard from '../components/WorkCard';
-
 export default function Work() {
     return (
         <div className="px-10 sm:px-20 md:px-32 md:-mb-52 lg:mb-0 lg:px-60 mx-auto">
@@ -11,7 +10,9 @@ export default function Work() {
             </Head>
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-24 flex flex-col items-center mx-auto">
-                    <h2 className=" font-nun bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black">
+                    <h2
+                        className={` font-play italic bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
+                    >
                         Works
                     </h2>
                     <p className="mt-8 text-sm md:text-md lg:text-lg xl:text-xl">

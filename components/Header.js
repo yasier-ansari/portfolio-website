@@ -28,8 +28,8 @@ const Header = () => {
     return (
         <nav
             className={`${
-                isScrolled && 'bg-opacity-[0.4] shadow-md drop-shadow-lg '
-            } font-medium duration-700 bg-opacity-[0.55] transition-all max-w-[1000px] ease-in font-quick z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
+                isScrolled && 'bg-opacity-[0.7] shadow-md drop-shadow-lg '
+            } font-medium duration-700 bg-opacity-90 transition-all max-w-[1000px] ease-in z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
         >
             <div className="flex justify-between  md:space-x-0 md:flex items-center place-items-center md:justify-between py-3 md:px-10 px-8">
                 <div className="order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
@@ -54,8 +54,8 @@ const Header = () => {
                     ></div>
                     <div
                         className={` ${
-                            open && 'opacity-0 translate-x-5'
-                        } relative rounded-xl origin-center transition-all duration-1000 ease-out w-4 h-[0.1rem] fill-black text-black bg-black `}
+                            open && 'opacity-0 translate-x-20'
+                        } relative rounded-xl origin-center transition-all duration-1000 ease-in-out w-4 h-[0.1rem] fill-black text-black bg-black `}
                     ></div>
                     <div
                         className={` ${
@@ -70,7 +70,10 @@ const Header = () => {
                     }`}
                 >
                     {Links.map((link) => (
-                        <li key={link.name} className="md:ml-8 text-base font-regular md:my-0 my-7">
+                        <li
+                            key={link.name}
+                            className="md:ml-8  text-base xl:text-[1.1rem] font-regular md:my-0 my-7"
+                        >
                             <Link
                                 href={link.link}
                                 className="text-gray-800 hover:text-gray-500 duration-500"

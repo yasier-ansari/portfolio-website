@@ -13,7 +13,7 @@ import { RxBorderDotted } from 'react-icons/rx';
 
 const WorkCard = (props) => {
     return (
-        <div className="flex h-max md:h-32 lg:h-40 bg-gradient-to-tr from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:techWork lg:bg-none p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
+        <div className="flex h-24 sm:h-28 md:h-32 lg:h-40 xl:h-48 bg-gradient-to-tr from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:techWork lg:bg-none p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
             <div className="relative basis-[35%] md:basis-[40%] rounded-lg md:rounded-2xl lg:rounded-3xl overflow-hidden ">
                 <Image
                     src={props.img}
