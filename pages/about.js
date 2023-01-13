@@ -12,8 +12,13 @@ export default function About() {
             </Head>
             <main className=" min-h-screen max-w-screen ">
                 <div className=" mx-auto pt-16 ">
-                    <div className="mt-12 mx-auto flex flex-col ">
-                        <div className="mx-auto">
+                    <div className=" mx-auto flex flex-col ">
+                        <h2
+                            className={`pt-6 pb-12 font-play italic bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
+                        >
+                            About
+                        </h2>
+                        <div className="mx-auto -mt-8 ">
                             <Image
                                 src={'/pfpimg.jpeg'}
                                 height={150}

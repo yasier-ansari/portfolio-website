@@ -29,15 +29,24 @@ export default function Home() {
                                 </p>
                             </div>
                             <p className="mt-12 font-medium text-base ">
-                                a web developer, UI/UX designer based in{' '}
-                                <span className=" font-[900] animate-text bg-gradient-to-br from-[#f4ba7d] via-[#fff] text-border2 to-[#acfda6] rounded-full px-2 py-[0.05rem] ">
+                                web developer,
+                                <span className="font-bold text-blue-400 ml-1">G</span>
+                                <span className="font-bold text-red-400">o</span>
+                                <span className="font-bold text-yellow-500">o</span>
+                                <span className="font-bold text-blue-400">g</span>
+                                <span className="font-bold text-green-400">l</span>
+                                <span className="font-bold text-red-400 mr-1">e</span>
+                                DSC Web Co-Lead, UI/UX designer and a lifelong learner based in{' '}
+                                <span className="ml-1 mr-2 font-[900] animate-text bg-gradient-to-br from-[#f4ba7d] via-[#fff] text-border2 to-[#acfda6] rounded-full px-2 py-[0.05rem] ">
                                     {' '}
                                     India{' '}
                                 </span>{' '}
-                                with a love for all things colorful & creative. A lifelong learner
+                                {/* with a love for all things colorful & creative. A lifelong learner
                                 who&apos;s always looking for ways to deepen his expertise in
                                 technology and coding. When not coding, ✨cats and ✨books are my
-                                escape plan.
+                                escape plan. */}
+                                with a love for all things colorful & creative. When not coding,
+                                ✨cats and ✨books are my escape plan.
                             </p>
                         </div>
                         <div className="lg:basis-[50%] pt-6 md:pt-0 ">
@@ -50,7 +59,7 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                    <div class="md:flex relative mx-auto justify-center items-center w-12 hidden md:mt-16 lg:-mt-8  ">
+                    <div className="md:flex relative mx-auto justify-center items-center w-12 hidden md:mt-16 lg:-mt-8  ">
                         <div
                             onClick={() => {
                                 window.scrollTo(0, 520);
@@ -58,7 +67,7 @@ export default function Home() {
                         >
                             <div id="wrapper-inner">
                                 <div id="scroll-down">
-                                    <span class="arrow-down"></span>
+                                    <span className="arrow-down"></span>
                                 </div>
                             </div>
                         </div>

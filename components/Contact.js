@@ -9,20 +9,21 @@ const Contact = () => {
                     Get in touch{' '}
                 </h2>
                 <p className="text-sm md:text-md  lg:text-lg xl:text-xl">
-                    Thanks for visiting 😊 got any internship & project offer ? or just want to say
-                    hello ? don&apos;t hesitate to send me an email or connect with me through my
-                    social media channels.
+                    Thanks for visiting, got any project offer ? or just want to say hello ? send me
+                    an email or connect with me through my social accounts. ✌️
                 </p>
                 <div className="grid grid-cols-2 text-[0.7rem] md:text-[0.85rem] lg:text-base gap-2 md:gap-3 lg:gap-4">
                     <a
-                        href="https://github.com/yasier-ansari"
+                        href="mailto:yasier.contact@gmail.com"
                         className=" flex align-middle items-center font-jak font-semibold space-x-1 "
                     >
                         <FiMail className="text-[#518FC7] h-3 w-3 md:h-4 md:w-4 " />
-                        <h5 className="text-transparent">#gmail</h5>
+                        <h5 className="text-transparent">#yasier</h5>
                     </a>
                     <a
-                        href="https://github.com/yasier-ansari"
+                        href="http://linkedin.com/in/yasier-ansari-711076222"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className=" flex align-middle items-center font-jak font-semibold space-x-1 "
                     >
                         <FiLinkedin className="text-[#CA6298] h-3 w-3 md:h-4 md:w-4 " />
@@ -30,6 +31,8 @@ const Contact = () => {
                     </a>
                     <a
                         href="https://github.com/yasier-ansari"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className=" flex align-middle items-center font-jak font-semibold space-x-1 "
                     >
                         <FiGithub className="text-[#518FC7] h-3 w-3 md:h-4 md:w-4 " />
@@ -37,6 +40,8 @@ const Contact = () => {
                     </a>
                     <a
                         href="https://github.com/yasier-ansari"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className=" flex align-middle items-center font-jak font-semibold space-x-1 "
                     >
                         <FiInstagram className="text-[#CA6298] h-3 w-3 md:h-4 md:w-4 " />
