@@ -10,6 +10,7 @@ import {
     SiSolidity,
     SiGithub,
 } from 'react-icons/si';
+import chatMain from '../../public/chat-main.png';
 
 const Chatbot = () => {
     return (
@@ -23,10 +24,12 @@ const Chatbot = () => {
                 <div className="pt-20 mx-auto ">
                     <div className=" relative sm:w-[95%] md:w-[80%] mx-auto h-40 sm:h-44 md:h-56 lg:h-[21rem] ">
                         <Image
-                            src={'/gdsc-main.png'}
+                            src={chatMain}
                             fill
+                            placeholder="blur"
+                            loading="lazy"
                             alt="work info"
-                            className="rounded-2xl mx-auto border-purple-100 shadow-2xl drop-shadow-md border-2 "
+                            className="rounded-2xl mx-auto object-cover border-purple-100 shadow-2xl drop-shadow-md border-2 "
                         />
                     </div>
                     <div className=" mt-6 md:mt-8 lg:mt-10 text-purple-800 flex w-[50%] mx-auto flex-row space-x-4 justify-between">

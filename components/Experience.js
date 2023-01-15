@@ -68,12 +68,12 @@ const Experience = () => {
                             Typescript
                         </span>
                     </div>
-                    <div className="relative w-full h-52 bg-[#000] rounded-[1.4rem] ">
+                    <div className="relative w-full h-52 rounded-[1.4rem] ">
                         <Image
                             fill
-                            src="/pfpimg.jpeg"
+                            src="/web.png"
                             alt="web dev"
-                            className="object-cover rounded-[2.3rem] p-8 "
+                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md  "
                         />
                     </div>
                 </div>
@@ -96,12 +96,12 @@ const Experience = () => {
                             Webflow
                         </span>
                     </div>
-                    <div className="relative w-full h-52 bg-[#000] rounded-[1.4rem] ">
+                    <div className="relative w-full h-52 rounded-[1.4rem] ">
                         <Image
                             fill
-                            src="/pfpimg.jpeg"
+                            src="/design.png"
                             alt="web dev"
-                            className="object-cover rounded-[2.3rem] p-8 "
+                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
                         />
                     </div>
                 </div>
@@ -125,12 +125,12 @@ const Experience = () => {
                             OpenZeppelin
                         </span>
                     </div>
-                    <div className="relative w-full h-52 bg-[#000] rounded-[1.4rem] ">
+                    <div className="relative w-full h-52 rounded-[1.4rem] ">
                         <Image
                             fill
-                            src="/pfpimg.jpeg"
+                            src="/blockchain.png"
                             alt="web dev"
-                            className="object-cover rounded-[2.3rem] p-8 "
+                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
                         />
                     </div>
                 </div>
@@ -154,12 +154,12 @@ const Experience = () => {
                             TensorFlow
                         </span>
                     </div>
-                    <div className="relative w-full h-52 bg-[#000] rounded-[1.4rem] ">
+                    <div className="relative w-full h-52 rounded-[1.4rem] ">
                         <Image
                             fill
-                            src="/pfpimg.jpeg"
+                            src="/ai.png"
                             alt="web dev"
-                            className="object-cover rounded-[2.3rem] p-8 "
+                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
                         />
                     </div>
                 </div>

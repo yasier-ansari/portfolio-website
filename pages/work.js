@@ -50,14 +50,14 @@ export default function Work() {
                             'Elegant and minimalistic Google DSC website made for M.H. Saboo Siddik College of Engineering'
                         }
                         arr={[null, 1, null, 1, null, 1, null, 1]}
-                        img={'/pfpimg.jpeg'}
+                        img={'/gdsc-main.png'}
                     />
                     <WorkCard
                         title={'Portfolio'}
                         link={'/work/portfolio'}
                         description={`full of life & colorful website you're seeing right now, is also a work of mine 😁`}
                         arr={[null, 1, null, 1, null, 1, null, 1]}
-                        img={'/pfpimg.jpeg'}
+                        img={'/port.png'}
                     />
                     <WorkCard
                         title={'muPy Chatbot'}
@@ -66,7 +66,7 @@ export default function Work() {
                             'A powerful intelligent Ai Chatbot made for National Level Hackathon Competition'
                         }
                         arr={[1, null, 1, null, null, 1, null, 1]}
-                        img={'/pfpimg.jpeg'}
+                        img={'/chat-main.png'}
                     />
                     <WorkCard
                         title={'wordle Clone'}
@@ -75,7 +75,7 @@ export default function Work() {
                             'A fully fledged working clone of a popular word puzzle game by Times, Wordle'
                         }
                         arr={[1, null, 1, null, null, 1, null, 1]}
-                        img={'/pfpimg.jpeg'}
+                        img={'/wordle-1.png'}
                     />
                     <WorkCard
                         title={'Zeyn eComm'}
@@ -84,7 +84,7 @@ export default function Work() {
                             'Completely secure and Robust Online Marketplace made with Java and kotlin'
                         }
                         arr={[1, null, 1, null, null, 1, null, 1]}
-                        img={'/pfpimg.jpeg'}
+                        img={'/zeyn-main.png'}
                     />
                 </div>
             </main>

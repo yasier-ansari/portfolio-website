@@ -10,6 +10,8 @@ import {
     SiSolidity,
     SiGithub,
 } from 'react-icons/si';
+import gdscMain from '../../public/gdsc-main.png';
+import gdsc1 from '../../public/gdsc-3.png';
 
 const GDSC = () => {
     return (
@@ -23,7 +25,9 @@ const GDSC = () => {
                 <div className="pt-20 mx-auto ">
                     <div className=" relative sm:w-[95%] md:w-[80%] mx-auto h-40 sm:h-44 md:h-56 lg:h-[21rem] ">
                         <Image
-                            src={'/gdsc-main.png'}
+                            src={gdscMain}
+                            placeholder="blur"
+                            loading="lazy"
                             fill
                             alt="work info"
                             className="rounded-2xl mx-auto border-purple-100 shadow-2xl drop-shadow-md border-2 "
@@ -119,8 +123,10 @@ const GDSC = () => {
                     </div>
                     <div className="relative w-[80%] md:w-[65%] lg:w-[50%] mx-auto h-28 md:h-40 lg:h-48 -mb-6 md:mb-0 xl:mb-12  ">
                         <Image
-                            src={'/gdsc-3.png'}
+                            src={gdsc1}
                             fill
+                            placeholder="blur"
+                            loading="lazy"
                             className="object-cover rounded-lg shadow-2xl drop-shadow-lg border-2 "
                             alt="work-info-gif"
                         />

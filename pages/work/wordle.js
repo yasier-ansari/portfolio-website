@@ -10,6 +10,7 @@ import {
     SiSolidity,
     SiGithub,
 } from 'react-icons/si';
+import wordle1 from '../../public/wordle-1.png';
 
 const Port = () => {
     return (
@@ -23,8 +24,10 @@ const Port = () => {
                 <div className="pt-20 mx-auto ">
                     <div className=" relative sm:w-[95%] md:w-[80%] mx-auto h-40 sm:h-44 md:h-56 lg:h-[21rem] ">
                         <Image
-                            src={'/gdsc-main.png'}
+                            src={wordle1}
                             fill
+                            placeholder="blur"
+                            loading="lazy"
                             alt="work info"
                             className="rounded-2xl mx-auto border-purple-100 shadow-2xl drop-shadow-md border-2 "
                         />
@@ -78,8 +81,10 @@ const Port = () => {
                     </div>
                     <div className="relative w-[80%] md:w-[65%] lg:w-[50%] mx-auto h-28 md:h-40 lg:h-48 -mb-6 md:mb-0 xl:mb-12  ">
                         <Image
-                            src={'/wordle-1.png'}
+                            src={wordle1}
                             fill
+                            placeholder="blur"
+                            loading="lazy"
                             className="object-cover rounded-lg shadow-2xl drop-shadow-lg border-2 "
                             alt="work-info-gif"
                         />
