@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Experience = () => {
     return (
         <div className=" mt-32 lg:mt-0 flex flex-col justify-start space-y-12 mx-auto items-center md:mt-20 lg:min-h-screen">
-            <div className="bg-purple-300 w-36 h-36 rounded-lg p-4">
+            <div className="bg-purple-300 w-36 h-36 rounded-lg p-4 select-none ">
                 <div className="bg-purple-400  h-28 w-28 flex-col justify-end mx-auto blur-none z-40 items-center text-center text-xl text-white font-medium rounded-lg p-2">
                     <div className="basis-[60%] text-5xl font-black ">
                         <h2 className="text-border mt-1 ">03</h2>
@@ -14,7 +14,6 @@ const Experience = () => {
                     <div className="basis-[30%] text-xs mt-3 font-bold"> Years of Experience</div>
                 </div>
             </div>
-            <div className="">GDSC Web Co-lead</div>
             <div className="w-[80%] mx-auto">
                 <div className="text-center font-medium ">
                     During these 3 years, I have developed a strong problem-solving and critical

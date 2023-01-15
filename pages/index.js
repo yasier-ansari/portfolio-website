@@ -24,23 +24,21 @@ export default function Home() {
                                 <h2 className="font-space animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-3xl lg:text-4xl xl:text-5xl font-black">
                                     Noru_{' '}
                                 </h2>
-                                <p className=" rounded-2xl px-3 py-0 bg-purple-300 font-semibold text-base">
+                                <p className="select-none rounded-2xl px-3 py-0 bg-purple-300 font-semibold text-base">
                                     yasier
                                 </p>
                             </div>
                             <p className="mt-12 font-medium text-base ">
-                                web developer,
-                                <span className="font-bold text-blue-400 ml-1">G</span>
+                                web developer,‎ <span className="font-bold text-blue-400 ">G</span>
                                 <span className="font-bold text-red-400">o</span>
                                 <span className="font-bold text-yellow-500">o</span>
                                 <span className="font-bold text-blue-400">g</span>
                                 <span className="font-bold text-green-400">l</span>
-                                <span className="font-bold text-red-400 mr-1">e</span>
-                                DSC Web Co-Lead, UI/UX designer and a lifelong learner based in{' '}
-                                <span className="ml-1 mr-2 font-[900] animate-text bg-gradient-to-br from-[#f4ba7d] via-[#fff] text-border2 to-[#acfda6] rounded-full px-2 py-[0.05rem] ">
-                                    {' '}
-                                    India{' '}
-                                </span>{' '}
+                                <span className="font-bold text-red-400">e</span> ‎DSC Web Co-Lead,
+                                UI/UX designer and a lifelong learner based in{' '}
+                                <span className="font-[900] select-none animate-text bg-gradient-to-br from-[#ff911b] via-[#fff4f4] text-border2 to-[#43ff36] rounded-full px-2 py-[0.05rem] ">
+                                    India
+                                </span>
                                 {/* with a love for all things colorful & creative. A lifelong learner
                                 who&apos;s always looking for ways to deepen his expertise in
                                 technology and coding. When not coding, ✨cats and ✨books are my
@@ -49,7 +47,7 @@ export default function Home() {
                                 ✨cats and ✨books are my escape plan.
                             </p>
                         </div>
-                        <div className="lg:basis-[50%] pt-6 md:pt-0 ">
+                        <div className="lg:basis-[50%] pt-6 md:pt-0 select-none ">
                             <Image
                                 src={'/main.png'}
                                 width={600}

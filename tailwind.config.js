@@ -53,6 +53,7 @@ module.exports = {
                 yes: ['Yeseva One', 'cursive'],
                 bio: ['BioRhyme', 'serif'],
                 dm: ['DM Sans', 'serif'],
+                app: ['Homemade Apple', 'cursive'],
             },
         },
     },

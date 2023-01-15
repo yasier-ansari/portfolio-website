@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import CategoryCard from '../components/About-cat';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 export default function About() {
     return (
@@ -11,19 +12,19 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className=" min-h-screen max-w-screen ">
-                <div className=" mx-auto pt-16 ">
-                    <div className=" mx-auto flex flex-col ">
+                <div className=" mx-auto pt-16 -pb-10 ">
+                    <div className=" mx-auto flex flex-col select-none ">
                         <h2
-                            className={`pt-6 pb-12 font-play italic bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
+                            className={`mt-6 mb-12 font-play italic bg-gradient-to-br to-blue-500 via-red-400/90 from-yellow-500  bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
                         >
                             About
                         </h2>
-                        <div className="mx-auto -mt-8 ">
+                        <div className="mx-auto  -mt-8 shadow-2xl shadow-purple-200 ">
                             <Image
                                 src={'/pfpimg.jpeg'}
                                 height={150}
                                 width={150}
-                                className="rounded-2xl drop-shadow-md shadow-2xl h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40 border border-white"
+                                className="rounded-2xl drop-shadow-md shadow-purple-200 shadow-2xl h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40 border border-white border-2"
                                 alt="yasier ansari"
                                 priority
                             />
@@ -37,48 +38,84 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    {/* <div className="flex items-center font-semibold justify-between w-[60%]  mx-auto mt-6 mb-8 ">
-                        <div className=" bg-gradient-to-r from-[#ffe4e4] to-[#ffe2d4] rounded-[0.89rem] px-3 text-[#cf3903]">
-                            design
-                        </div>
-                        <div className=" bg-gradient-to-l from-[#e7ffdc] to-[#ddfff8] rounded-[0.89rem] px-3 text-[#097360]">
-                            full-stack
-                        </div>
-                        <div className=" bg-gradient-to-l from-[#cde1ff] to-[#f9d2ff] rounded-[0.89rem] px-3 text-[#4e0aa2]">
-                            data science
-                        </div>
-                        <div className=" bg-gradient-to-l from-[#ffdaf9] to-[#ffdcdc] rounded-[0.89rem] px-3 text-[#690c58]">
-                            web3
-                        </div>
-                    </div> */}
                     <CategoryCard />
                     <div className="text-sm md:text-md lg:text-lg xl:text-xl mx-auto font-[450]">
                         <p className="mt-6 mb-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore
-                            similique aliquid corporis numquam tempora earum praesentium placeat nam
-                            quisquam autem voluptatem quam, optio modi, dolore ratione itaque sunt.
-                            Ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-                            quidem incidunt cupiditate ex vero nam ab perspiciatis enim qui, optio
-                            et iste nemo, assumenda sed ut eligendi. Maxime, ad facere!{' '}
+                            Hello world 👋 , yasier here, a skilled software developer, web
+                            developer & UI-UX designer with a passion for creating intuitive and
+                            functional applications. Currently pursuing my 4 year Bachelors program
+                            - B.E. and resides in mumbai.
                         </p>
 
-                        <Image
+                        {/* <Image
                             src={'/about-gdsc.jpg'}
                             width={500}
                             height={350}
                             className="flex mx-auto rounded-3xl mb-12"
                             alt="gdsc image"
-                        />
+                        /> */}
+
+                        <p className="text-gray-400 font-semibold mb-1">Current</p>
 
                         <p className="pb-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                            expedita saepe et suscipit aliquid natus maxime asperiores non ut dicta
-                            porro, praesentium, eveniet repudiandae minus, eum adipisci ducimus
-                            architecto sit? Dolorum harum voluptates ipsam eum, unde in maxime
-                            numquam exercitationem quo dicta doloremque aliquam, possimus aspernatur
-                            distinctio reprehenderit recusandae quisquam labore impedit
-                            perspiciatis, ab consequatur optio. Tempora iure nulla eligendi!
+                            A
+                            <span className="font-nun font-extrabold mr-1 ">
+                                <span className=" text-blue-400 ml-1">G</span>
+                                <span className=" text-red-400">o</span>
+                                <span className=" text-yellow-500">o</span>
+                                <span className=" text-blue-400">g</span>
+                                <span className=" text-green-400">l</span>
+                                <span className=" text-red-400 mr-1">e</span>
+                                DSC Web Co-Lead
+                            </span>
+                            for college campus, I have the knowledge and expertise to tackle a wide
+                            range of projects. From developing custom websites to optimizing
+                            existing systems & making Robust Machine Learning Model. Whether working
+                            on a big project or small fix, I always bring my A-game with healthy
+                            dose of creativity. Most of my time is spent in building dynamic
+                            websites, design system, writing Engg assignments and searching for new
+                            technology and getting acquainted with it.
                         </p>
+
+                        <p className="text-gray-400 font-semibold mb-1">Contact</p>
+
+                        <p className="">
+                            While I may not be a widely recognized figure, I am readily available
+                            for connection on my social media platforms. <br />
+                            you can contact me on the gmail{' '}
+                            <span className="font-nun select-all font-extrabold hover:text-purple-700 cursor-pointer select ">
+                                {' '}
+                                contact.yasier@gmail.com
+                            </span>{' '}
+                            or linkedIn{' '}
+                            <a
+                                href="http://linkedin.com/in/yasier-ansari-711076222"
+                                className="font-nun font-extrabold hover:text-purple-700 cursor-pointer select"
+                                rel="noopener noreferrer"
+                                target="blank"
+                            >
+                                {' '}
+                                yasier-ansari{' '}
+                            </a>{' '}
+                            <br />
+                            Or you can dm me on insta{' '}
+                            <a
+                                href="https://instagram.com/yasier_70"
+                                target="blank"
+                                rel="noopener noreferrer"
+                                className="font-nun font-extrabold hover:text-purple-700 cursor-pointer select "
+                            >
+                                {' '}
+                                @yasier_77{' '}
+                            </a>{' '}
+                        </p>
+                    </div>
+                    <div className="flex mx-auto justify-center mt-16 select-none ">
+                        ✨
+                        <span className="font-black font-app text-3xl align-text-bottom tracking-wider mx-6 ">
+                            thanks for visiting
+                        </span>
+                        ✨
                     </div>
                 </div>
             </main>

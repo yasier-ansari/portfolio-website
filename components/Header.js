@@ -2,13 +2,15 @@
 import Link from 'next/link';
 import { BsBrightnessHigh } from 'react-icons/bs';
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const Header = () => {
+    const router = useRouter();
     let Links = [
         { name: 'work', link: '/work' },
         { name: 'about', link: '/about' },
-        { name: 'tools', link: '/tech' },
-        { name: 'source', link: '/work-info' },
+        { name: 'tech', link: '/tech' },
+        { name: 'resume', link: '/resume.pdf' },
     ];
     const [isScrolled, setIsScrolled] = useState(false);
     let [open, setOpen] = useState(false);
@@ -29,13 +31,13 @@ const Header = () => {
         <nav
             className={`${
                 isScrolled && 'bg-opacity-[0.7] shadow-md drop-shadow-lg '
-            } font-medium duration-700 bg-opacity-90 transition-all max-w-[1000px] ease-in z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
+            } font-medium duration-700 bg-opacity-90 transition-all max-w-[1000px] select-none ease-in z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
         >
             <div className="flex justify-between  md:space-x-0 md:flex items-center place-items-center md:justify-between py-3 md:px-10 px-8">
                 <div className="order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
                     <Link href={'/'} className="">
                         {' '}
-                        <h3 className="bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-space text-xl font-bold">
+                        <h3 className="bg-gradient-to-tl from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-space text-xl font-bold">
                             Noru_{' '}
                         </h3>{' '}
                     </Link>
@@ -76,7 +78,11 @@ const Header = () => {
                         >
                             <Link
                                 href={link.link}
-                                className="text-gray-800 hover:text-gray-500 duration-500"
+                                className={`${
+                                    router.asPath == `/${link.name}`
+                                        ? 'text-purple-600 font-black '
+                                        : ''
+                                } text-gray-800 hover:text-purple-500 duration-500`}
                             >
                                 {link.name}
                             </Link>
