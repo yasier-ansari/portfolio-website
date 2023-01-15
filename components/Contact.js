@@ -39,7 +39,7 @@ const Contact = () => {
                         <h5 className="text-transparent">@noru</h5>
                     </a>
                     <a
-                        href="https://github.com/yasier-ansari"
+                        href="https://instagram.com/yasier_70"
                         target="_blank"
                         rel="noopener noreferrer"
                         className=" flex align-middle items-center font-jak font-semibold space-x-1 "
