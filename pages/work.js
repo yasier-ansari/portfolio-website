@@ -11,7 +11,7 @@ export default function Work() {
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-24 flex flex-col items-center mx-auto">
                     <h2
-                        className={` font-play italic bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
+                        className={` font-deca bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
                     >
                         Works
                     </h2>
@@ -45,7 +45,7 @@ export default function Work() {
                 <div className="mt-12 flex flex-col space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-12 mx-auto items-center w-full md:w-[80%] lg:w-[75%]">
                     <WorkCard
                         title={'Google DSC'}
-                        link={'/gdsc'}
+                        link={'/work/gdsc'}
                         description={
                             'Elegant and minimalistic Google DSC website made for M.H. Saboo Siddik College of Engineering'
                         }
@@ -54,14 +54,14 @@ export default function Work() {
                     />
                     <WorkCard
                         title={'Portfolio'}
-                        link={'/portfolio'}
+                        link={'/work/portfolio'}
                         description={`full of life & colorful website you're seeing right now, is also a work of mine 😁`}
                         arr={[null, 1, null, 1, null, 1, null, 1]}
                         img={'/pfpimg.jpeg'}
                     />
                     <WorkCard
                         title={'muPy Chatbot'}
-                        link={'/chatbot'}
+                        link={'/work/chatbot'}
                         description={
                             'A powerful intelligent Ai Chatbot made for National Level Hackathon Competition'
                         }
@@ -70,7 +70,7 @@ export default function Work() {
                     />
                     <WorkCard
                         title={'wordle Clone'}
-                        link={'/wordle-clone'}
+                        link={'/work/wordle'}
                         description={
                             'A fully fledged working clone of a popular word puzzle game by Times, Wordle'
                         }
@@ -78,12 +78,12 @@ export default function Work() {
                         img={'/pfpimg.jpeg'}
                     />
                     <WorkCard
-                        title={'advGuild'}
-                        link={'/prj'}
+                        title={'Zeyn eComm'}
+                        link={'/work/zeyn'}
                         description={
-                            'A website for finding perfect camping oasis,camping spots with interactive maps'
+                            'Completely secure and Robust Online Marketplace made with Java and kotlin'
                         }
-                        arr={[1, null, null, 1, 1, null, 1]}
+                        arr={[1, null, 1, null, null, 1, null, 1]}
                         img={'/pfpimg.jpeg'}
                     />
                 </div>

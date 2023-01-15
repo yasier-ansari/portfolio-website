@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="h-max xl:px-20 2xl:px-40 lg:h-[22rem] p-6 sm:p-8 md:p-10 pt-32 md:pt-40 lg:p-10 bg-gradient-to-tr from-[#f6ebeb] to-[#ecf7ff] flex flex-col lg:flex-row mx-auto rounded-3xl drop-shadow-2xl backdrop-blur-xl items-center justify-center lg:justify-between ">
             <div className="order-2 sm:w-[75%] lg:w-[80%] xl:w-[70%] lg:basis-[60%] flex flex-col space-y-6 cirGradient bg-clip-text">
-                <h2 className=" tracking-normal bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black">
+                <h2 className=" tracking-normal bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-deca">
                     Get in touch{' '}
                 </h2>
                 <p className="text-sm md:text-md  lg:text-lg xl:text-xl">

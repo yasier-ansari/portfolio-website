@@ -31,9 +31,9 @@ const Header = () => {
         <nav
             className={`${
                 isScrolled && 'bg-opacity-[0.7] shadow-md drop-shadow-lg '
-            } font-medium duration-700 bg-opacity-90 transition-all max-w-[1000px] select-none ease-in z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[50%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
+            } font-medium duration-700 bg-opacity-90 transition-all max-w-[1000px] select-none ease-in z-40  w-[75%] sm:w-[75%] md:w-[70%] lg:w-[45%] mx-auto  bg-white drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
         >
-            <div className="flex justify-between  md:space-x-0 md:flex items-center place-items-center md:justify-between py-3 md:px-10 px-8">
+            <div className="flex justify-between  md:space-x-20 md:flex items-center place-items-center md:justify-center py-3 md:px-10 px-8">
                 <div className="order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
                     <Link href={'/'} className="">
                         {' '}
@@ -42,9 +42,9 @@ const Header = () => {
                         </h3>{' '}
                     </Link>
                 </div>
-                <div className="w-max md:order-8">
+                {/* <div className="w-max md:order-8">
                     <BsBrightnessHigh className="w-4 md:w-5 h-4 md:h-5 " />{' '}
-                </div>
+                </div> */}
                 <div
                     onClick={() => setOpen(!open)}
                     className="transition-all duration-500 ease-in order-3 text-lg flex flex-col space-y-[0.2rem]  cursor-pointer items-center font-bold md:hidden"
