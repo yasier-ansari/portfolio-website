@@ -10,6 +10,11 @@ import {
     SiFirebase,
     SiJava,
     SiAndroid,
+    SiPython,
+    SiPytorch,
+    SiCss3,
+    SiKotlin,
+    SiRazorpay,
 } from 'react-icons/si';
 import Link from 'next/link';
 import { RxBorderDotted } from 'react-icons/rx';
@@ -72,9 +77,23 @@ const WorkCard = (props) => {
                         {props.arr[9] && (
                             <SiAndroid className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
                         )}
-
                         {props.arr[10] && (
+                            <SiPython className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                        )}
+                        {props.arr[11] && (
+                            <SiPytorch className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                        )}
+                        {props.arr[12] && (
+                            <SiCss3 className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                        )}
+                        {props.arr[13] && (
                             <RxBorderDotted className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                        )}
+                        {props.arr[14] && (
+                            <SiKotlin className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                        )}
+                        {props.arr[15] && (
+                            <SiRazorpay className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
                         )}
                     </div>
                 </div>

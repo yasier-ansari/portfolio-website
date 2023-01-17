@@ -20,22 +20,6 @@ export default function Document() {
                     rel="stylesheet"
                 />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;800;900&display=swap"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&display=swap"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-                    rel="stylesheet"
-                />
-                <link
                     href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
                     rel="stylesheet"
                 />

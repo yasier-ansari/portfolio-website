@@ -1,7 +1,6 @@
 import '../styles/globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Socials from '../components/socials';
 function MyApp({ Component, pageProps }) {
     return (
         <main className="land relative z-10">

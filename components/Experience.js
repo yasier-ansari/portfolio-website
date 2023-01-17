@@ -15,13 +15,13 @@ const Experience = () => {
                 </div>
             </div>
             <div className="w-[80%] mx-auto">
-                <div className="text-center font-medium ">
+                <div className="text-center font-medium tracking-normal leading-5 text-base lg:text-lg">
                     During these 3 years, I have developed a strong problem-solving and critical
                     thinking skills, and am able to quickly adapt to new technologies and methods of
                     working.Given are some skill-set that I have learned and am still actively
                     learning as days goes by
                 </div>
-                <div className="flex justify-center space-x-8 items-center  my-4">
+                <div className="flex justify-center select-none space-x-8 items-center  my-4">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="124"
@@ -49,22 +49,22 @@ const Experience = () => {
                     <div className="mx-auto text-center font-bold font-deca text-xl text-teal-500 ">
                         Web Dev
                     </div>
-                    <div className="font-medium text-[0.95rem] px-2  ">
+                    <div className="font-medium sm:text-[0.95rem] md:text-base px-2  ">
                         specialized in creating beautiful and user-friendly websites with my skills
                         mainly in ReactJs centered tools. I have added a splash of personality to
                         every project I work on.
                     </div>
                     <div className="flex space-x-4 ml-2 justify-start text-[0.6rem] font-bold ">
-                        <span class="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
                             React
                         </span>
-                        <span class="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
                             NextJs
                         </span>
-                        <span class="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
                             Tailwind
                         </span>
-                        <span class="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
                             Typescript
                         </span>
                     </div>
@@ -81,7 +81,7 @@ const Experience = () => {
                     <div className="mx-auto text-center font-deca font-bold text-xl text-blue-500   ">
                         Design
                     </div>
-                    <div className="font-medium text-[0.95rem] px-2 ">
+                    <div className="font-medium sm:text-[0.95rem] md:text-base px-2 ">
                         {/* I ensure that my code is not just a collection of letters, but a beautifully
                         crafted story.  */}
                         With a touch of artistic flair and splash of colors a design becomes a work
@@ -89,10 +89,10 @@ const Experience = () => {
                         pleasing elements.
                     </div>
                     <div className="flex flex-row ml-2 space-x-4 justify-start  text-[0.6rem] font-bold ">
-                        <span class="bg-gradient-to-b from-blue-100 to-purple-100 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-blue-100 to-purple-100 rounded-full text-center px-2 py-1">
                             Figma
                         </span>
-                        <span class="bg-gradient-to-b from-blue-100 to-purple-100 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-blue-100 to-purple-100 rounded-full text-center px-2 py-1">
                             Webflow
                         </span>
                     </div>
@@ -109,19 +109,19 @@ const Experience = () => {
                     <div className="mx-auto text-center font-bold font-deca text-xl text-purple-500 ">
                         BlockChain
                     </div>
-                    <div className="font-medium text-[0.95rem] px-2 ">
+                    <div className="font-medium sm:text-[0.95rem] md:text-base px-2 ">
                         A recent booming domain that&apos;s security and network centered using web3
                         as its turf. As the domain is still developing, I&apos;m still in the
                         learning phase with main goal towards NFT and ERC271 Token.
                     </div>
                     <div className="flex flex-row space-x-4 ml-2   text-[0.6rem] font-bold ">
-                        <span class="bg-gradient-to-b from-purple-200 to-pink-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-purple-200 to-pink-200 rounded-full text-center px-2 py-1">
                             Solidity
                         </span>
-                        <span class="bg-gradient-to-b from-purple-200 to-pink-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-purple-200 to-pink-200 rounded-full text-center px-2 py-1">
                             Hardhat
                         </span>
-                        <span class="bg-gradient-to-b from-purple-200 to-pink-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-purple-200 to-pink-200 rounded-full text-center px-2 py-1">
                             OpenZeppelin
                         </span>
                     </div>
@@ -138,19 +138,19 @@ const Experience = () => {
                     <div className="mx-auto text-center font-deca tracking-wide font-bold text-xl text-orange-500  ">
                         A.I.{' '}
                     </div>
-                    <div className="font-medium text-[0.95rem] px-2 ">
+                    <div className="font-medium sm:text-[0.95rem] md:text-base px-2 ">
                         yes... I have used ChatGPT and copy.ai for my uni assignments 😁 for good
                         and with my major in Machine learning, I want to create software like them
                         to leave a positive impact on human life.
                     </div>
                     <div className="flex space-x-4 ml-2 justify-start  text-[0.6rem] font-bold ">
-                        <span class="bg-gradient-to-b from-pink-200 to-orange-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-pink-200 to-orange-200 rounded-full text-center px-2 py-1">
                             Python
                         </span>
-                        <span class="bg-gradient-to-b from-pink-200 to-orange-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-pink-200 to-orange-200 rounded-full text-center px-2 py-1">
                             NLTP
                         </span>
-                        <span class="bg-gradient-to-b from-pink-200 to-orange-200 rounded-full text-center px-2 py-1">
+                        <span className="bg-gradient-to-b from-pink-200 to-orange-200 rounded-full text-center px-2 py-1">
                             TensorFlow
                         </span>
                     </div>
@@ -165,25 +165,25 @@ const Experience = () => {
                 </div>
             </div>
             <div className="w-[80%] mx-auto">
-                <div className="text-center font-medium mb-6 ">
+                <div className="text-center font-medium mb-6 tracking-normal text-sm leading-5 sm:text-base lg:text-lg ">
                     that was a short information about the domain that I have previously worked on.
                     while you&apos;re at it, have a look at few chosen works that i have created
                     using above domain. And if you want to know more, you can download my resume
                 </div>
                 <div className="flex justify-center space-x-3 md:space-x-6 lg:space-x-8 items-center  my-4">
-                    <div class="group border-purple-400 hover:bg-purple-400 hover:text-white hover:drop-shadow-2xl text-purple-500 rounded-md md:rounded-xl px-2 py-1 md:px-4 md:py-2 shadow-md drop-shadow-lg shadow-purple-300 ">
+                    <div className="group border-purple-400 hover:bg-purple-400 hover:text-white hover:drop-shadow-2xl text-purple-500 rounded-md md:rounded-xl px-2 py-1 md:px-4 md:py-2 shadow-md drop-shadow-lg shadow-purple-300 ">
                         <Link
                             href="/resume.pdf"
-                            className="flex items-center font-semibold lg:font-bold space-x-2 text-xs md:text-base "
+                            className="flex items-center font-semibold lg:font-bold space-x-2 text-sm md:text-base "
                         >
                             <FiFileText className="stroke-purple-400 stroke-2 group-hover:stroke-white " />
                             <p>Resume</p>
                         </Link>
                     </div>
-                    <div class=" group border-blue-400 hover:bg-blue-400 text-blue-500 hover:text-white hover:drop-shadow-2xl rounded-md md:rounded-xl px-2 py-1 md:px-4 md:py-2 shadow-md drop-shadow-lg shadow-blue-300">
+                    <div className=" group border-blue-400 hover:bg-blue-400 text-blue-500 hover:text-white hover:drop-shadow-2xl rounded-md md:rounded-xl px-2 py-1 md:px-4 md:py-2 shadow-md drop-shadow-lg shadow-blue-300">
                         <Link
                             href="/work"
-                            className="flex items-center font-semibold lg:font-bold space-x-2 text-xs md:text-base "
+                            className="flex items-center font-semibold lg:font-bold space-x-2 text-sm md:text-base "
                         >
                             <BsArrowUpRight className=" stroke-blue-400 stroke-2 group-hover:stroke-white " />
                             <p>Projects</p>

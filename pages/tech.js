@@ -170,11 +170,11 @@ export default function Tech() {
             </Head>
             <main className="lg:min-h-screen max-w-screen ">
                 <div className="pt-24 flex flex-col mx-auto">
-                    <h2 className="bg-gradient-to-r from-[#4ce3e1] via-[#be45ff] to-[#ff8a2a] bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-deca font-black">
-                        Tools & Tech
+                    <h2 className="bg-gradient-to-br to-yellow-200 from-red-500 bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-deca font-bold ">
+                        Tech-stack
                     </h2>
-                    <p className="mt-8 text-center w-[70%] mx-auto text-sm md:text-base lg:text-lg xl:text-xl ">
-                        Yes, just like any other programmer, i also spend more time searching and
+                    <p className="mt-8 font-medium text-center md:w-[70%] mx-auto text-sm md:text-base ">
+                        Just like any other programmer, I also spend more time searching and
                         experimenting tools than actually coding some senseful things 😎
                     </p>
                 </div>
