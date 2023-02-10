@@ -3,12 +3,12 @@ import { FiMail, FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi';
 
 const Contact = () => {
     return (
-        <div className="h-max xl:px-20 2xl:px-40 lg:h-[22rem] p-6 sm:p-8 md:p-10 pt-32 md:pt-40 lg:p-10 bg-gradient-to-tr from-[#f6ebeb] to-[#ecf7ff] flex flex-col lg:flex-row mx-auto rounded-3xl drop-shadow-2xl backdrop-blur-xl items-center justify-center lg:justify-between ">
-            <div className="order-2 sm:w-[75%] lg:w-[80%] xl:w-[70%] lg:basis-[60%] flex flex-col space-y-6 cirGradient bg-clip-text">
-                <h2 className=" tracking-normal bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-deca">
+        <div className="h-max xl:px-12 lg:h-[22rem] p-6 sm:p-8 md:px-10 pt-32 md:pt-40 lg:pt-10 bg-gradient-to-tr from-[#f6ebeb90] to-[#fff8ec60] flex flex-col lg:flex-row mx-auto rounded-3xl shadow-md drop-shadow-2xl backdrop-blur-xl items-center justify-center lg:justify-between ">
+            <div className="order-2 sm:w-[75%] lg:w-[80%] lg:basis-[60%] flex flex-col space-y-6 cirGradient bg-clip-text">
+                <h2 className=" tracking-normal bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl font-bold font-deca">
                     Get in touch{' '}
                 </h2>
-                <p className="text-sm md:text-md  lg:text-lg xl:text-xl">
+                <p className="text-sm md:text-md  lg:text-lg xl:text-xl ">
                     Thanks for visiting, got any project offer ? or just want to say hello ? send me
                     an email or connect with me through my social accounts. ✌️
                 </p>
@@ -49,13 +49,13 @@ const Contact = () => {
                     </a>
                 </div>
             </div>
-            <div className=" xl:px-8 2xl:px-28 order-1 lg:order-2 absolute -rotate-[15deg] lg:rotate-0 lg:flex top-6 right-4 md:top-10 md:right-12 lg:basis-[40%]">
+            <div className="order-1 lg:order-2 absolute -rotate-[15deg] lg:rotate-0 lg:flex top-6 right-4 md:top-10 md:right-12 lg:basis-[40%]">
                 <Image
                     src={'/Mailbox.png'}
                     alt="contact"
                     width={750}
                     height={650}
-                    className="backdrop-shadow-xl h-24 w-24 md:h-40 md:w-44 lg:w-[15rem] lg:h-[16rem] xl:w-[18rem] xl:h-[16rem] "
+                    className="backdrop-shadow-xl h-24 w-24 md:h-40 md:w-44 lg:w-[15rem] lg:h-[16rem] xl:w-[16rem] xl:h-[14rem] "
                 />
             </div>
         </div>

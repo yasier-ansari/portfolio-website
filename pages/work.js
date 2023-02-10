@@ -15,7 +15,7 @@ export default function Work() {
                     >
                         Works
                     </h2>
-                    <p className="mt-8 text-center md:w-[70%] mx-auto text-sm font-medium md:text-base mb-2 ">
+                    <p className="mt-8 max-w-xl text-center md:w-[70%] mx-auto text-sm font-medium md:text-base mb-2 ">
                         From websites with pastel hues to intelligent ML models, infused with little
                         bit of playfulness. So go ahead, and take a look around 💖
                     </p>
@@ -130,6 +130,32 @@ export default function Work() {
                             1,
                         ]}
                         img={'/zeyn-main.png'}
+                    />
+                    <WorkCard
+                        title={'Da-tree '}
+                        link={'/work/da-tree'}
+                        description={
+                            'showcase your online presence and portfolios with nothing but a json file, Linktree alternative'
+                        }
+                        arr={[
+                            null,
+                            1,
+                            1,
+                            1,
+                            1,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                        ]}
+                        img={'/datree.png'}
                     />
                 </div>
             </main>

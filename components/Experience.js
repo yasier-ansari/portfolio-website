@@ -15,7 +15,7 @@ const Experience = () => {
                 </div>
             </div>
             <div className="w-[80%] mx-auto">
-                <div className="text-center font-medium tracking-normal leading-5 text-base lg:text-lg">
+                <div className="text-center max-w-2xl mx-auto font-medium tracking-normal leading-5 text-base lg:text-lg">
                     During these 3 years, I have developed a strong problem-solving and critical
                     thinking skills, and am able to quickly adapt to new technologies and methods of
                     working.Given are some skill-set that I have learned and am still actively
@@ -44,8 +44,8 @@ const Experience = () => {
                 </div>
             </div>
             <div className="flex flex-col relative space-y-16 md:space-y-10 lg:space-y-8 items-center">
-                <div className="absolute left-[0%] md:left-[10%] lg:left-[50%] w-[2px] h-full top-8 md:top-4 bg-gradient-to-b from-teal-400 via-purple-400 to-orange-400 border-[#ffffff80] border rounded-full"></div>
-                <div className="self-start drop-shadow-2xl  flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2  bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className="absolute left-[0%] md:left-[10%] lg:left-[50%] w-[3px]  h-full top-8 md:top-4 bg-gradient-to-b from-teal-400 via-purple-400 to-orange-400 border-[#ffffff80] border rounded-full"></div>
+                <div className="self-start drop-shadow-2xl  flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2  bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
                     <div className="mx-auto text-center font-bold font-deca text-xl text-teal-500 ">
                         Web Dev
                     </div>
@@ -77,7 +77,7 @@ const Experience = () => {
                         />
                     </div>
                 </div>
-                <div className="self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] rounded-[1.4rem] p-4 rounded-tl-none hover:bg-gradient-to-tr  hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className="self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none hover:bg-gradient-to-tr  hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
                     <div className="mx-auto text-center font-deca font-bold text-xl text-blue-500   ">
                         Design
                     </div>
@@ -105,7 +105,7 @@ const Experience = () => {
                         />
                     </div>
                 </div>
-                <div className="self-start drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className="self-start drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
                     <div className="mx-auto text-center font-bold font-deca text-xl text-purple-500 ">
                         BlockChain
                     </div>
@@ -134,7 +134,7 @@ const Experience = () => {
                         />
                     </div>
                 </div>
-                <div className=" self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] rounded-[1.4rem] p-4  rounded-tl-none hover:bg-gradient-to-tr  hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className=" self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4  rounded-tl-none hover:bg-gradient-to-tr  hover:from-[#ffeff7] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
                     <div className="mx-auto text-center font-deca tracking-wide font-bold text-xl text-orange-500  ">
                         A.I.{' '}
                     </div>
@@ -164,7 +164,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-[80%] mx-auto">
+            <div className="w-[80%] max-w-2xl mx-auto">
                 <div className="text-center font-medium mb-6 tracking-normal text-sm leading-5 sm:text-base lg:text-lg ">
                     that was a short information about the domain that I have previously worked on.
                     while you&apos;re at it, have a look at few chosen works that i have created

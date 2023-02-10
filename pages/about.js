@@ -12,7 +12,7 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className=" min-h-screen max-w-screen ">
-                <div className=" mx-auto pt-16 -pb-10 ">
+                <div className=" mx-auto pt-16 -pb-10 max-w-5xl">
                     <div className=" mx-auto flex flex-col select-none ">
                         <h2
                             className={`mt-6 mb-12 font-deca bg-gradient-to-br to-blue-500 via-red-400/90 from-yellow-500  bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`}

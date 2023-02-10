@@ -21,10 +21,10 @@ import { RxBorderDotted } from 'react-icons/rx';
 
 const WorkCard = (props) => {
     return (
-        <div className="flex h-24 sm:h-28 md:h-32 lg:h-40 xl:h-48 bg-gradient-to-tr from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:techWork lg:bg-none p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
+        <div className="flex h-24 max-w-2xl cursor-pointer sm:h-28 md:h-32 lg:h-40 xl:h-48 bg-gradient-to-tr from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:techWork lg:bg-none p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
             <Link
                 href={`${props.link}`}
-                className="relative basis-[35%] md:basis-[40%] rounded-lg md:rounded-2xl lg:rounded-3xl overflow-hidden "
+                className="relative shadow-md border border-purple-200 drop-shadow-xl basis-[35%] md:basis-[40%] rounded-lg md:rounded-2xl lg:rounded-3xl overflow-hidden "
             >
                 <Image
                     src={props.img}
@@ -50,54 +50,54 @@ const WorkCard = (props) => {
                         <SiMongodb className="h-4 w-4" />
                         <SiSolidity className="h-4 w-4" /> */}
                         {props.arr[0] && (
-                            <SiJavascript className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiJavascript className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[1] && (
-                            <SiTypescript className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiTypescript className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[2] && (
-                            <IoLogoReact className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <IoLogoReact className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[3] && (
-                            <SiNextdotjs className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiNextdotjs className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[4] && (
-                            <SiTailwindcss className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiTailwindcss className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[5] && (
-                            <SiMongodb className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiMongodb className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[6] && (
-                            <SiSolidity className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiSolidity className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[7] && (
-                            <SiFirebase className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiFirebase className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
-                        {props.arr[8] && <SiJava className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />}
+                        {props.arr[8] && <SiJava className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />}
                         {props.arr[9] && (
-                            <SiAndroid className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4" />
+                            <SiAndroid className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
                         {props.arr[10] && (
-                            <SiPython className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                            <SiPython className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5 " />
                         )}
                         {props.arr[11] && (
-                            <SiPytorch className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                            <SiPytorch className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5 " />
                         )}
                         {props.arr[12] && (
-                            <SiCss3 className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                            <SiCss3 className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5 " />
                         )}
                         {props.arr[13] && (
-                            <RxBorderDotted className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                            <RxBorderDotted className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5 " />
                         )}
                         {props.arr[14] && (
-                            <SiKotlin className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                            <SiKotlin className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5 " />
                         )}
                         {props.arr[15] && (
-                            <SiRazorpay className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 " />
+                            <SiRazorpay className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5 " />
                         )}
                     </div>
                 </div>
-                <div className="font-semibold text-[0.5rem] sm:text-xs md:text-sm lg:text-[0.9rem] ">
+                <div className="font-semibold cursor-text text-[0.5rem] sm:text-xs md:text-sm lg:text-[0.9rem] ">
                     {props.description}
                 </div>
             </div>

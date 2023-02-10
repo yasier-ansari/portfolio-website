@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+*::selection {
+    @apply bg-emerald-200;
+}
+
+::-webkit-scrollbar {
+    /* height: 10px; */
+  /* border-radius: 1px solid #d5d5d5; */
+    @apply h-2 w-[12px] rounded-sm border-gray-100/20;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-rose-200/20 w-20;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-purple-400/50 rounded-[4px];
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple-400
+}
+
 @layer base {
     * {
         box-sizing: border-box;
