@@ -1,29 +1,29 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { IoLogoReact, IoBrowsersOutline } from 'react-icons/io5';
 import { SiPython, SiPytorch, SiGithub } from 'react-icons/si';
-import chatMain from '../../public/chat-main.png';
+import { CldImage } from "next-cloudinary";
 
 const Chatbot = () => {
     return (
         <div className="px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-7xl">
             <Head>
                 <title>ai bot ✨noru </title>
-
             </Head>
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-20 mx-auto ">
                     <div className=" relative sm:w-[95%] md:w-[80%] mx-auto h-40 sm:h-44 md:h-56 lg:h-[21rem] ">
-                        <Image
-                            src={chatMain}
+                        <CldImage
+                            src={'portfolio/chat-main_xgrmyl'}
+                            sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
                             fill
-                            placeholder="blur"
                             loading="lazy"
                             alt="work info"
                             className="rounded-2xl mx-auto object-cover border-purple-100 shadow-2xl drop-shadow-md border-2 "
                         />
                     </div>
-                    <div className=" mt-6 md:mt-8 lg:mt-10 text-purple-800 flex w-[50%] mx-auto flex-row space-x-16 md:space-x-20 justify-center">
+                    <div className=" mt-6 md:mt-8 lg:mt-10 dark:text-purple-300 text-purple-800 flex w-[50%] mx-auto flex-row space-x-16 md:space-x-20 justify-center">
                         <SiPython className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                         <SiPytorch className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                     </div>

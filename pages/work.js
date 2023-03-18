@@ -47,14 +47,16 @@ export default function Work() {
                             'Elegant and minimalistic Google DSC website made for M.H. Saboo Siddik College of Engineering'
                         }
                         arr={[1, null, 1, null, 1, null, null, null]}
-                        img={'/gdsc-main.png'}
+                        img={'portfolio/gdsc-main_gnptrp'}
+                        alt={"gdsc-website"}
                     />
                     <WorkCard
                         title={'Portfolio'}
                         link={'/work/portfolio'}
                         description={`full of life & colorful website you're seeing right now, is also a work of mine 😁`}
                         arr={[1, null, null, 1, 1, null, null, null]}
-                        img={'/port.png'}
+                        img={'portfolio/port_q37won'}
+                        alt={"portoflio-website"}
                     />
                     <WorkCard
                         title={'muPy Chatbot'}
@@ -77,11 +79,13 @@ export default function Work() {
                             1,
                             null,
                         ]}
-                        img={'/chat-main.png'}
+                        img={'portfolio/chat-main_xgrmyl'}
+                        alt={'chat-bot'}
                     />
                     <WorkCard
                         title={'wordle Clone'}
                         link={'/work/wordle'}
+                        alt={"wordle-clone"}
                         description={
                             'A fully fledged working clone of a popular word puzzle game by Times, Wordle'
                         }
@@ -101,7 +105,7 @@ export default function Work() {
                             1,
                             null,
                         ]}
-                        img={'/wordle-1.png'}
+                        img={'portfolio/wordle-1_fwq19g'}
                     />
                     <WorkCard
                         title={'Zeyn eComm'}
@@ -127,7 +131,8 @@ export default function Work() {
                             1,
                             1,
                         ]}
-                        img={'/zeyn-main.png'}
+                        img={'portfolio/zeyn-main_rlkyvj'}
+                        alt={"zeyn-ecomm"}
                     />
                     <WorkCard
                         title={'Da-tree '}
@@ -153,7 +158,8 @@ export default function Work() {
                             null,
                             null,
                         ]}
-                        img={'/datree.png'}
+                        img={'portfolio/da-tree_wx1q6z'}
+                        alt={"da-tree"}
                     />
                     <WorkCard
                         title={'Cryplog '}
@@ -179,7 +185,8 @@ export default function Work() {
                             null,
                             null,
                         ]}
-                        img={'/cryplog-1.png'}
+                        img={'portfolio/cryplog-1_xh93ti'}
+                        alt={"cryplog"}
                     />
                 </div>
             </main>

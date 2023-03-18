@@ -1,11 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { IoLogoReact, IoBrowsersOutline } from 'react-icons/io5';
+import { IoBrowsersOutline } from 'react-icons/io5';
 import { SiJava, SiGithub, SiKotlin, SiRazorpay, SiFirebase } from 'react-icons/si';
-import zeynMain from '../../public/zeyn-main.png';
-import zeyn1 from '../../public/zeyn-1.jpg';
-import zeyn2 from '../../public/zeyn-2.png';
-import zeyn3 from '../../public/zeyn-3.png';
+import { CldImage } from "next-cloudinary";
 
 const Zeyn = () => {
     return (
@@ -17,15 +14,18 @@ const Zeyn = () => {
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-20 mx-auto ">
                     <div className=" relative sm:w-[95%] md:w-[80%] mx-auto h-40 sm:h-44 md:h-56 lg:h-[17rem] ">
-                        <Image
-                            src={zeynMain}
+                        <CldImage
+                            src={'portfolio/zeyn-main_rlkyvj'}
                             fill
-                            placeholder="blur"
-                            alt="work info"
+                            // placeholder="blur"
+                            sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+                            alt="zeyn info"
                             className="rounded-2xl mx-auto border-purple-100 shadow-2xl drop-shadow-md border-2 "
                         />
                     </div>
-                    <div className=" mt-6 md:mt-8 lg:mt-10 text-purple-800 flex w-[50%] mx-auto flex-row justify-center space-x-16 md:space-x-20">
+                    <div className=" mt-6 md:mt-8 lg:mt-10 dark:text-purple-300 text-purple-800 flex w-[50%] mx-auto flex-row justify-center space-x-16 md:space-x-20">
                         <SiKotlin className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                         <SiJava className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                         <SiRazorpay className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
@@ -44,28 +44,37 @@ const Zeyn = () => {
                     </p>
                     <div className=" mt-8 grid grid-cols-1 md:grid-cols-3 justify-center gap-y-12 md:gap-x-12 lg:gap-x-20 items-center mx-auto">
                         <div className="w-40 rounded-[3rem] relative h-80 ">
-                            <Image
-                                src={zeyn1}
+                            <CldImage
+                                src={'portfolio/zeyn-1_ytsuwh'}
                                 alt=""
-                                placeholder="blur"
+                                // placeholder="blur"
+                                sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
                                 fill
                                 className="rounded-[1.3rem] border-white border-2 shadow-md shadow-[#696969] "
                             />
                         </div>
                         <div className="w-40 rounded-[3rem] relative h-80 ">
-                            <Image
-                                src={zeyn2}
+                            <CldImage
+                                src={'portfolio/zeyn-3_nhfixn'}
                                 alt=""
-                                placeholder="blur"
+                                // placeholder="blur"
+                                sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
                                 fill
                                 className="rounded-[1.3rem] border-white border-2 shadow-md shadow-[#696969] "
                             />
                         </div>
                         <div className="w-40 rounded-[3rem] relative h-80 ">
-                            <Image
-                                src={zeyn3}
+                            <CldImage
+                                src={'portfolio/zeyn-2_h6oieu'}
                                 alt=""
-                                placeholder="blur"
+                                // placeholder="blur"
+                                sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
                                 fill
                                 className="rounded-[1.3rem] border-white border-2 shadow-md shadow-[#696969] "
                             />

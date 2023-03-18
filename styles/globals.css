@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *::selection {
-    @apply bg-emerald-200;
+    @apply bg-emerald-100 dark:bg-purple-400/70;
 }
 
 ::-webkit-scrollbar {
@@ -24,14 +24,61 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    @apply bg-purple-400
+    @apply bg-purple-400;
 }
 
+
+
 @layer base {
+
     * {
         box-sizing: border-box;
         scroll-behavior: smooth;
     }
+        .wave {
+            animation-name: wave-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            display: inline-block;
+        }
+    
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0.0deg);
+            }
+    
+            10% {
+                transform: rotate(14.0deg);
+            }
+    
+            /* The following five values can be played with to make the waving more or less extreme */
+            20% {
+                transform: rotate(-8.0deg);
+            }
+    
+            30% {
+                transform: rotate(14.0deg);
+            }
+    
+            40% {
+                transform: rotate(-4.0deg);
+            }
+    
+            50% {
+                transform: rotate(10.0deg);
+            }
+    
+            60% {
+                transform: rotate(0.0deg);
+            }
+    
+            /* Reset for the last half to pause */
+            100% {
+                transform: rotate(0.0deg);
+            }
+        }
 
     a {
         text-decoration: none;
@@ -50,11 +97,11 @@
     }
 
     .tech {
-        @apply hover:bg-gradient-to-tr hover:from-[#cae3e3] hover:via-[#f2e3ff] hover:to-[#ffdccb] focus:bg-gradient-to-tr focus:from-[#cae3e3] focus:via-[#f2e3ff] focus:to-[#ffdccb];
+        @apply hover:bg-gradient-to-tr hover:from-[#cae3e3] hover:via-[#f2e3ff] hover:to-[#ffdccb] dark:hover:from-[#cae3e320] dark:hover:via-[#f2e3ff35] dark:hover:to-[#ffdccb30] focus:bg-gradient-to-tr focus:from-[#cae3e3] focus:via-[#f2e3ff] focus:to-[#ffdccb];
     }
 
     .techWork {
-        @apply hover:bg-gradient-to-tr hover:from-[#ebffff] hover:via-[#f7edff] hover:to-[#ffeae0] focus:bg-gradient-to-tr focus:from-[#cae3e3] focus:via-[#f2e3ff] focus:to-[#ffdccb];
+        @apply hover:bg-gradient-to-tr dark:hover:from-[#ebffff] dark:hover:via-[#f7edff] dark:hover:to-[#ffeae0] hover:from-[#ebffff] hover:via-[#f7edff] hover:to-[#ffeae0] focus:bg-gradient-to-tr focus:from-[#cae3e3] focus:via-[#f2e3ff] focus:to-[#ffdccb];
     }
 
     .iconClip {

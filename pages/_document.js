@@ -51,8 +51,9 @@ export default function Document() {
                     href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
                     rel="stylesheet"
                 />
+                <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
             </Head>
-            <body className="back font-quick mx-auto bg-[#fffdfd] overflow-x-hidden lg:transform-gpu">
+            <body className="back font-quick mx-auto bg-[#fffdfd] dark:bg-[#1F1F1F] overflow-x-hidden lg:transform-gpu">
                 <Main />
                 <NextScript />
             </body>

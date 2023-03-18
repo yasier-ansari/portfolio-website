@@ -1,28 +1,30 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import CategoryCard from '../components/About-cat';
-import { BsArrowUpRight } from 'react-icons/bs';
+import { CldImage } from "next-cloudinary";
+import { useTheme } from 'next-themes';
 
 export default function About() {
+    const { theme, setTheme } = useTheme()
     return (
         <div className="px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto">
             <Head>
                 <title>About me ✨noru </title>
             </Head>
             <main className=" min-h-screen max-w-screen ">
-                <div className=" mx-auto pt-16 -pb-10 max-w-5xl">
+                <div className=" mx-auto pt-16 -pb-10 max-w-7xl">
                     <div className=" mx-auto flex flex-col select-none ">
                         <h2
                             className={`mt-6 mb-12 font-deca bg-gradient-to-br to-blue-500 via-red-400/90 from-yellow-500  bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`}
                         >
                             About
                         </h2>
-                        <div className="mx-auto  -mt-8 shadow-2xl shadow-purple-200 ">
-                            <Image
-                                src={'/pfpimg.jpeg'}
-                                height={150}
-                                width={150}
-                                className="rounded-2xl drop-shadow-md shadow-purple-200 shadow-2xl h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40 border border-white border-2"
+                        <div className="mx-auto transition-all duration-1000 ease-in-out -mt-8 dark:shadow-xs shadow-2xl dark:shadow-purple-50/10 shadow-purple-200 ">
+                            <CldImage
+                                src={'portfolio/av5_pch3n8'}
+                                height={600}
+                                width={600}
+                                className="rounded-2xl drop-shadow-md shadow-purple-200 dark:shadow-orange-100/60 dark:drop-shadow-sm shadow-2xl h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40 border-white border-2"
                                 alt="yasier ansari"
                                 priority
                             />
@@ -115,7 +117,7 @@ export default function About() {
                     </div>
                     <div className="flex mx-auto justify-center mt-16 select-none ">
                         ✨
-                        <span className="font-black font-bio text-lg md:text-3xl align-text-bottom tracking-wider mx-3 md:mx-6 ">
+                        <span className="font-black font-app text-lg md:text-3xl align-text-bottom tracking-wider mx-3 md:mx-6 ">
                             thanks for visiting
                         </span>
                         ✨

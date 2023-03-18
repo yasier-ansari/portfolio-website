@@ -18,18 +18,21 @@ import {
 } from 'react-icons/si';
 import Link from 'next/link';
 import { RxBorderDotted } from 'react-icons/rx';
-
+import { CldImage } from "next-cloudinary";
 const WorkCard = (props) => {
     return (
-        <div className="flex h-24 max-w-2xl cursor-pointer sm:h-28 md:h-32 lg:h-40 xl:h-48 bg-gradient-to-tr from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:techWork lg:bg-none p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
+        <div className="flex h-24 max-w-2xl cursor-pointer sm:h-28 md:h-32 lg:h-40 xl:h-48 bg-gradient-to-tr  dark:from-[#eefcff20] dark:via-[#faf5ff30] dark:to-[#fff2ec15] from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:bg-gradient-to-tr lg:hover:dark:from-[#eefcff20] lg:hover:dark:via-[#faf5ff30] lg:hover:dark:to-[#fff2ec15]  p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
             <Link
                 href={`${props.link}`}
                 className="relative shadow-md border border-purple-200 drop-shadow-xl basis-[35%] md:basis-[40%] rounded-lg md:rounded-2xl lg:rounded-3xl overflow-hidden "
             >
-                <Image
+                <CldImage
                     src={props.img}
                     fill
-                    alt="work-1"
+                    sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+                    alt={props.alt}
                     className="object-cover rounded-lg md:rounded-2xl lg:rounded-3xl hover:scale-[1.1] transition-all duration-300 ease-linear "
                 />
             </Link>

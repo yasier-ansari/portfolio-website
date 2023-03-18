@@ -1,8 +1,8 @@
+import { CldImage } from "next-cloudinary";
 import Head from 'next/head';
 import Image from 'next/image';
 import { IoLogoReact, IoBrowsersOutline } from 'react-icons/io5';
 import { SiTypescript, SiNextdotjs, SiGithub, SiTailwindcss } from 'react-icons/si';
-import datreeMain from '../../public/da-tree.png'
 
 const Datree = () => {
     return (
@@ -14,16 +14,18 @@ const Datree = () => {
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-20 mx-auto ">
                     <div className=" relative sm:w-[95%] md:w-[80%] mx-auto h-40 sm:h-44 md:h-56 lg:h-[21rem] ">
-                        <Image
-                            src={datreeMain}
+                        <CldImage
+                            src={'portfolio/datree_amgert'}
                             fill
-                            placeholder="blur"
                             loading="lazy"
+                            sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
                             alt="datree info"
                             className="rounded-2xl mx-auto object-cover border-purple-100 shadow-2xl drop-shadow-md border-2 "
                         />
                     </div>
-                    <div className=" mt-6 md:mt-8 lg:mt-10 text-purple-800 flex w-[50%] mx-auto flex-row space-x-16 md:space-x-20 justify-center">
+                    <div className=" mt-6 md:mt-8 lg:mt-10 dark:text-purple-300 text-purple-800 flex w-[50%] mx-auto flex-row space-x-16 md:space-x-20 justify-center">
                         <SiTypescript className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                         <SiNextdotjs className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                         <SiTailwindcss className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
@@ -61,7 +63,7 @@ const Datree = () => {
                         <div className="hover:text-purple-400 flex mx-auto space-x-2 md:space-x-3 items-center">
                             <IoBrowsersOutline className=" w-[0.73rem] h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <a
-                                href="https://personal-da-tree.vercel.app/"
+                                href="https://datree.yasier.in/"
                                 target="blank"
                                 rel="noopener noreferrer"
                             >

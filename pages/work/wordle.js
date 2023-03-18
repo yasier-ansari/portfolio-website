@@ -1,8 +1,8 @@
+import { CldImage } from "next-cloudinary";
 import Head from 'next/head';
 import Image from 'next/image';
-import { IoLogoReact, IoBrowsersOutline } from 'react-icons/io5';
+import { IoBrowsersOutline } from 'react-icons/io5';
 import { SiJavascript, SiCss3, SiGithub } from 'react-icons/si';
-import wordle1 from '../../public/wordle-1.png';
 
 const Port = () => {
     return (
@@ -14,16 +14,19 @@ const Port = () => {
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-20 mx-auto ">
                     <div className=" relative sm:w-[95%] md:w-[80%] mx-auto h-40 sm:h-44 md:h-56 lg:h-[21rem] ">
-                        <Image
-                            src={wordle1}
+                        <CldImage
+                            src={'portfolio/wordle-1_fwq19g'}
                             fill
-                            placeholder="blur"
+                            // placeholder="blur"
+                            sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
                             loading="lazy"
                             alt="work info"
                             className="rounded-2xl mx-auto border-purple-100 shadow-2xl drop-shadow-md border-2 "
                         />
                     </div>
-                    <div className=" mt-6 md:mt-8 lg:mt-10 text-purple-800 flex w-[50%] mx-auto flex-row space-x-16 md:space-x-20 justify-center">
+                    <div className=" mt-6 md:mt-8 lg:mt-10 dark:text-purple-300 text-purple-800 flex w-[50%] mx-auto flex-row space-x-16 md:space-x-20 justify-center">
                         <SiJavascript className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                         <SiCss3 className="  w-4 h-4  md:h-5   md:w-5 md:rounded-[0.1rem] " />
                     </div>
@@ -68,7 +71,7 @@ const Port = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="relative w-[80%] md:w-[65%] lg:w-[50%] mx-auto h-28 md:h-40 lg:h-48 -mb-6 md:mb-0 xl:mb-12  ">
+                    {/* <div className="relative w-[80%] md:w-[65%] lg:w-[50%] mx-auto h-28 md:h-40 lg:h-48 -mb-6 md:mb-0 xl:mb-12  ">
                         <Image
                             src={wordle1}
                             fill
@@ -77,7 +80,7 @@ const Port = () => {
                             className="object-cover rounded-lg shadow-2xl drop-shadow-lg border-2 "
                             alt="work-info-gif"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </main>
         </div>
