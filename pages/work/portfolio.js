@@ -75,7 +75,7 @@ const Port = () => {
                                 source code{' '}
                             </a>
                         </div>
-                        <div className="hover:text-purple-400 flex mx-auto space-x-2 md:space-x-3 items-center">
+                        <button className="hover:text-purple-400 flex mx-auto space-x-2 md:space-x-3 items-center">
                             <IoBrowsersOutline className=" w-[0.73rem] h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <p
                                 onClick={() => {
@@ -84,7 +84,7 @@ const Port = () => {
                             >
                                 live website{' '}
                             </p>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </main>

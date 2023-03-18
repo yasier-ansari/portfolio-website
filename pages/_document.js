@@ -15,7 +15,7 @@ export default function Document() {
                 <meta property="og:site_name" content="yasier.in" />
                 <meta property="og:url" content="https://www.yasier.in" />
                 <meta property="og:description" content="Google DSC web Co-lead | Web Dev | DevOps | AI-ML | Figma Design | Student with a love for all things colorful & creative ..." />
-                <meta property="og:image" itemProp="image" content="https://res.cloudinary.com/dwpxnfbhz/image/upload/c_fill,e_auto_saturation,g_center,h_945,q_50,w_1800/v1676054986/seo/port_oyaskk.jpg" />
+                <meta property="og:image" itemProp="image" content="https://res.cloudinary.com/yasier/image/upload/c_fill,e_auto_saturation,g_center,h_945,q_50,w_1800/v1676054986/seo/card_fj8hfc.jpg" />
                 <meta property="og:image:height" content="1200" />
                 <meta property="og:image:width" content="800" />
 
@@ -27,7 +27,7 @@ export default function Document() {
                 <meta property="twitter:creator" content="@Yasier_noru" />
                 <meta property="twitter:title" content="Yasier Ansari | Noru  " />
                 <meta property="twitter:description" content="Google DSC web Co-lead | Web Dev | DevOps | AI-ML | Figma Design | Student with a love for all things colorful & creative ..." />
-                <meta property="twitter:image" content="https://res.cloudinary.com/dwpxnfbhz/image/upload/c_fill,e_auto_saturation,g_center,h_784,q_50,w_1500/v1676054986/seo/port_oyaskk.jpg" />
+                <meta property="twitter:image" content="https://res.cloudinary.com/yasier/image/upload/c_fill,e_auto_saturation,g_center,h_784,q_50,w_1500/v1676054986/seo/card_fj8hfc.jpg" />
 
                 {/* canonical links */}
 
@@ -53,7 +53,7 @@ export default function Document() {
                 />
                 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
             </Head>
-            <body className="back font-quick mx-auto bg-[#fffdfd] dark:bg-[#1F1F1F] overflow-x-hidden lg:transform-gpu">
+            <body className="back font-quick mx-auto bg-[#fffdfd] dark:bg-[#242424] overflow-x-hidden lg:transform-gpu">
                 <Main />
                 <NextScript />
             </body>

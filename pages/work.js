@@ -17,7 +17,7 @@ export default function Work() {
                         From websites with pastel hues to intelligent ML models, infused with little
                         bit of playfulness. So go ahead, and take a look around 💖
                     </p>
-                    <div className="flex justify-center space-x-4 items-center mt-2 text-gray-400">
+                    <div className="select-none flex justify-center space-x-4 items-center mt-2 text-gray-400">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="124"

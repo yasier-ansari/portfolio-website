@@ -77,7 +77,7 @@ const Experience = () => {
                             sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
-                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md  "
+                            className=" select-none object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md  "
                         />
                     </div>
                 </div>
@@ -108,7 +108,7 @@ const Experience = () => {
                             sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
-                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
+                            className=" select-none object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
                         />
                     </div>
                 </div>
@@ -140,7 +140,7 @@ const Experience = () => {
                             sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
-                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
+                            className=" select-none object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
                         />
                     </div>
                 </div>
@@ -149,8 +149,7 @@ const Experience = () => {
                         A.I.{' '}
                     </div>
                     <div className="font-medium sm:text-[0.95rem] md:text-base px-2 ">
-                        yes... I have used ChatGPT and copy.ai for my uni assignments 😁 for good
-                        and with my major in Machine learning, I want to create software like them
+                        yes... I have used ChatGPT and copy.ai for my uni assignments 😁.As Machine Learning as my majors, I want to create software like them
                         to leave a positive impact on human life.
                     </div>
                     <div className="flex space-x-4 ml-2 justify-start dark:text-black text-[0.6rem] font-bold ">
@@ -172,7 +171,7 @@ const Experience = () => {
                             sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
-                            className="object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
+                            className=" select-none object-cover rounded-[1.4rem] border-2 border-white shadow-md drop-shadow-md "
                         />
                     </div>
                 </div>

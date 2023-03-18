@@ -36,25 +36,25 @@ const Header = () => {
     return (
         <nav
             className={`${isScrolled && 'bg-opacity-[0.7] shadow-md drop-shadow-lg '
-                } font-medium duration-500 bg-opacity-90 transition-all linear z-40 dark:text-white w-[75%] sm:w-[75%] md:w-[70%] lg:w-[55%] xl:w-[50%] max-w-6xl mx-auto  bg-white dark:bg-[#181818] drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
+                } font-medium duration-500 bg-opacity-90 transition-all linear z-40 dark:text-white w-[75%] sm:w-[75%] md:w-[70%] lg:w-[55%] xl:w-[50%] max-w-6xl mx-auto  bg-white dark:bg-[#251d28] drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
         >
             <div className="flex justify-between md:space-x-12 lg:space-x-16 xl:space-x-20 md:flex items-center place-items-center md:justify-center py-3 md:px-10 px-8">
-                <div className="order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
+                <div className=" select-none order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
                     <Link href={'/'} className="">
                         {' '}
                         <h3 className="bg-gradient-to-tl from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-space text-xl font-bold">
-                            yasier{' '}
+                            yasier_{' '}
                         </h3>{' '}
                     </Link>
                 </div>
                 {
                     currentTheme === "dark" ? (
                         <button onClick={() => { setTheme("light") }} className="w-max md:order-8 fill-purple-600 ">
-                            <MdLightMode className="w-4 md:w-5 h-4 md:h-5 fill-white " />{' '}
+                            <MdLightMode className="w-4 md:w-5 h-4 md:h-5 lg:w-6 lg:h-6 fill-white " />{' '}
                         </button>
                     ) : (
                         <button onClick={() => { setTheme("dark") }} className="w-max md:order-8 fill-purple-600 ">
-                            <MdDarkMode className="w-4 md:w-5 h-4 md:h-5 fill-black " />{' '}
+                            <MdDarkMode className="w-4 md:w-5 h-4 md:h-5 lg:w-6 lg:h-6 fill-black " />{' '}
                         </button>
                     )
                 }

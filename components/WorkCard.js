@@ -33,7 +33,7 @@ const WorkCard = (props) => {
           (max-width: 1200px) 50vw,
           33vw"
                     alt={props.alt}
-                    className="object-cover rounded-lg md:rounded-2xl lg:rounded-3xl hover:scale-[1.1] transition-all duration-300 ease-linear "
+                    className="object-cover select-none rounded-lg md:rounded-2xl lg:rounded-3xl hover:scale-[1.1] transition-all duration-300 ease-linear "
                 />
             </Link>
             <div className="grid grid-cols gap-y-1 sm:gap-y-2 md:gap-y-3 lg:gap-y-4 pl-4 md:pl-6 lg:pl-8 py-2 md:py-3 lg:py-4 basis-[60%]">

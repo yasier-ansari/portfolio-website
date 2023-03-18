@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import CategoryCard from '../components/About-cat';
-import { CldImage } from "next-cloudinary";
+import aboutImage from '../public/image.png'
 import { useTheme } from 'next-themes';
 
 export default function About() {
@@ -13,18 +13,19 @@ export default function About() {
             </Head>
             <main className=" min-h-screen max-w-screen ">
                 <div className=" mx-auto pt-16 -pb-10 max-w-7xl">
-                    <div className=" mx-auto flex flex-col select-none ">
+                    <div className=" mx-auto flex flex-col ">
                         <h2
-                            className={`mt-6 mb-12 font-deca bg-gradient-to-br to-blue-500 via-red-400/90 from-yellow-500  bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`}
+                            className={`mt-6 mb-12 font-deca bg-gradient-to-br to-blue-500 via-red-400/90 from-yellow-500  bg-clip-text text-transparent selection:text-gray-700 dark:selection:text-white/90 items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`}
                         >
                             About
                         </h2>
                         <div className="mx-auto transition-all duration-1000 ease-in-out -mt-8 dark:shadow-xs shadow-2xl dark:shadow-purple-50/10 shadow-purple-200 ">
-                            <CldImage
-                                src={'portfolio/av5_pch3n8'}
+                            <Image
+                                src={aboutImage}
+                                placeholder="blur"
                                 height={600}
                                 width={600}
-                                className="rounded-2xl drop-shadow-md shadow-purple-200 dark:shadow-orange-100/60 dark:drop-shadow-sm shadow-2xl h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40 border-white border-2"
+                                className="rounded-2xl select-none drop-shadow-md shadow-purple-200 dark:shadow-orange-100/60 dark:drop-shadow-sm shadow-2xl h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40 border-white border-2"
                                 alt="yasier ansari"
                                 priority
                             />
@@ -47,15 +48,7 @@ export default function About() {
                             - B.E. and resides in mumbai.
                         </p>
 
-                        {/* <Image
-                            src={'/about-gdsc.jpg'}
-                            width={500}
-                            height={350}
-                            className="flex mx-auto rounded-3xl mb-12"
-                            alt="gdsc image"
-                        /> */}
-
-                        <p className="text-gray-400 font-semibold mb-1">Current</p>
+                        <p className="text-gray-400 select-none font-semibold mb-1">Current</p>
 
                         <p className="pb-12">
                             A
@@ -77,7 +70,7 @@ export default function About() {
                             technology and getting acquainted with it.
                         </p>
 
-                        <p className="text-gray-400 font-semibold mb-1">Contact</p>
+                        <p className="text-gray-400 select-none font-semibold mb-1">Contact</p>
 
                         <p className="">
                             While I may not be a widely recognized figure, I am readily available
@@ -87,7 +80,7 @@ export default function About() {
                                 onClick={() =>
                                     navigator.clipboard.writeText('contact.yasier@gmail.com')
                                 }
-                                className="font-nun select-all font-extrabold hover:text-purple-700 cursor-pointer select "
+                                className="font-nun underline underline-offset-4 decoration-2 decoration-purple-400 group select-all font-extrabold dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select "
                             >
                                 {' '}
                                 contact.yasier@gmail.com
@@ -95,7 +88,7 @@ export default function About() {
                             or linkedIn{' '}
                             <a
                                 href="http://linkedin.com/in/yasier-ansari-711076222"
-                                className="font-nun font-extrabold hover:text-purple-700 cursor-pointer select"
+                                className="font-nun underline underline-offset-4 decoration-2 decoration-purple-400 font-extrabold dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select"
                                 rel="noopener noreferrer"
                                 target="blank"
                             >
@@ -108,7 +101,7 @@ export default function About() {
                                 href="https://instagram.com/yasier_70"
                                 target="blank"
                                 rel="noopener noreferrer"
-                                className="font-nun font-extrabold hover:text-purple-700 cursor-pointer select "
+                                className="font-nun font-extrabold underline underline-offset-4 decoration-2 decoration-purple-400 dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select "
                             >
                                 {' '}
                                 @yasier_77{' '}
