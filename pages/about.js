@@ -9,7 +9,7 @@ export default function About() {
     return (
         <div className="px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto">
             <Head>
-                <title>About me ✨noru </title>
+                <title>About me ☁️ Yasier Ansari </title>
             </Head>
             <main className=" min-h-screen max-w-screen ">
                 <div className=" mx-auto pt-16 -pb-10 max-w-7xl">
@@ -44,7 +44,7 @@ export default function About() {
                         <p className="mt-6 mb-12">
                             Hello world 👋 , yasier here, a skilled software developer, web
                             developer & UI-UX designer with a passion for creating intuitive and
-                            functional applications. Currently pursuing my 4 year Bachelors program
+                            functional applications with clean code advocacy. Currently pursuing my 4 year Bachelors program
                             - B.E. and resides in mumbai.
                         </p>
 

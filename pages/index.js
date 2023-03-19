@@ -1,20 +1,14 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import Contact from '../components/Contact';
 import Blob from '../components/Blob';
 import Experience from '../components/Experience';
-import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import Main from '../public/image.png'
 export default function Home() {
     const { theme, setTheme } = useTheme();
     return (
-        <div className=" px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[90rem] ">
-            <Head>
-                <title> yasier ☁️ web dev </title>
-
-            </Head>
-            <div className="max-w-full lg:min-h-screen">
+        <>
+            <div className=" lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[90rem]">
                 <div className="lg:h-screen 2xl:h-max max-w-[90rem] mx-auto">
                     <Blob />
                     <div className=" flex flex-col justify-center  lg:flex-row md:pt-12 lg:space-x-20 items-center lg:justify-between">
@@ -26,11 +20,8 @@ export default function Home() {
                                 <p className="wave text-2xl select-none sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl origin-bottom-right " >
                                     👋🏽
                                 </p>
-                                {/* <p className="select-none rounded-2xl px-3 py-0 dark:bg-purple-500 bg-purple-300 font-semibold text-base">
-                                    yasier
-                                </p> */}
                             </div>
-                            <p className="mt-12 font-medium tracking-wide  base ">
+                            <p className="mt-12 font-medium tracking-wide max-w-lg base ">
                                 web developer,‎ <span className="font-bold text-blue-400 ">G</span>
                                 <span className="font-bold text-red-400">o</span>
                                 <span className="font-bold text-yellow-500">o</span>
@@ -48,7 +39,6 @@ export default function Home() {
                         <Image
                             priority
                             src={Main}
-                            placeholder="blur"
                             width="600"
                             height="400"
                             alt='main image'
@@ -74,10 +64,9 @@ export default function Home() {
                 </div>
                 <Experience />
                 <div className="mt-28 mx-auto ">
-                    {/* <Image src={url("yasier/ai_xetglq")} blurDataURL={blurredUrl("yasier/ai_xetglq")} width={800} height={420} alt="dunno" /> */}
                     <Contact />
                 </div>
             </div>
-        </div>
+        </>
     );
 }

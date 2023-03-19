@@ -191,6 +191,9 @@ export default function Tech() {
                                     src={data[idNumber].main}
                                     alt="tech"
                                     fill
+                                    sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
                                     className=" select-none p-1 sm:p-2 md:p-3 lg:p-4 h-full w-full flex mx-auto object-contain rounded-2xl "
                                 />
                             </div>
@@ -220,7 +223,7 @@ export default function Tech() {
                 </div>
                 <div className=" mt-12 pb-12 grid grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8 w-[80%] sm:w-[75%] md:w-[70%] mx-auto items-center justify-items-center justify-center place-content-center ">
                     {data.map(function (obj, i) {
-                        return <TechCard id={obj.id} main={obj.main} key={i} changeId={changeId} />;
+                        return <TechCard id={obj.id} alt={obj.title} main={obj.main} key={i} changeId={changeId} />;
                     })}
                 </div>
             </main>

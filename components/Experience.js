@@ -46,7 +46,7 @@ const Experience = () => {
             </div>
             <div className="flex flex-col relative space-y-16 md:space-y-10 lg:space-y-8 items-center">
                 <div className="absolute left-[0%] md:left-[10%] lg:left-[50%] w-[3px]  h-full top-8 md:top-4 bg-gradient-to-b from-teal-400 via-purple-400 to-orange-400 border-[#ffffff80] border rounded-full"></div>
-                <div className="self-start drop-shadow-2xl  flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2  bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className="self-start drop-shadow-2xl  flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2  bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
                     <div className="mx-auto text-center font-bold font-deca text-xl text-teal-500 ">
                         Web Dev
                     </div>
@@ -56,9 +56,6 @@ const Experience = () => {
                         every project I work on.
                     </div>
                     <div className="flex space-x-4 ml-2 justify-start text-[0.6rem] font-bold dark:text-black ">
-                        <span className="bg-gradient-to-b dark:from-teal-500 dark:to-green-400 from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
-                            React
-                        </span>
                         <span className="bg-gradient-to-b dark:from-teal-500 dark:to-green-400 from-teal-200 to-green-200 rounded-full text-center px-2 py-1">
                             NextJs
                         </span>
@@ -81,7 +78,7 @@ const Experience = () => {
                         />
                     </div>
                 </div>
-                <div className="self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className="self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
                     <div className="mx-auto text-center font-deca font-bold text-xl dark:text-blue-400 text-blue-500   ">
                         Design
                     </div>
@@ -112,7 +109,7 @@ const Experience = () => {
                         />
                     </div>
                 </div>
-                <div className="self-start drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className="self-start drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
                     <div className="mx-auto text-center font-bold font-deca text-xl dark:text-purple-300 text-purple-500 ">
                         BlockChain
                     </div>
@@ -144,7 +141,7 @@ const Experience = () => {
                         />
                     </div>
                 </div>
-                <div className=" self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4  rounded-tl-none hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] lg:bg-none ">
+                <div className=" self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4  rounded-tl-none hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
                     <div className="mx-auto text-center font-deca tracking-wide font-bold text-xl text-orange-500  ">
                         A.I.{' '}
                     </div>
