@@ -9,9 +9,9 @@ export default function About() {
     return (
         <div className="px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto">
             <Head>
-                <title>About me ☁️ Yasier Ansari </title>
+                <title> About me ☁️ Yasier Ansari </title>
             </Head>
-            <main className=" min-h-screen max-w-screen ">
+            <main className="  max-w-screen ">
                 <div className=" mx-auto pt-16 -pb-10 max-w-7xl">
                     <div className=" mx-auto flex flex-col ">
                         <h2
@@ -31,16 +31,16 @@ export default function About() {
                             />
                         </div>
                         <div className="text-center mx-auto mt-8 z-20">
-                            <h3 className="mx-auto font-nun font-extrabold text-lg lg:text-xl xl:text-2xl">
+                            <h3 className="mx-auto  font-bold text-lg lg:text-xl xl:text-2xl">
                                 Yasier Ansari
                             </h3>
-                            <p className="text-gray-400 font-semibold text-xs sm:text-sm md:text-md lg:text-lg ">
+                            <p className="text-gray-400 font-deca font-normal text-xs sm:text-sm md:text-md lg:text-lg ">
                                 NOOB web dev, PRO crastinator
                             </p>
                         </div>
                     </div>
                     <CategoryCard />
-                    <div className=" text-[0.92rem] md:text-base md:text-md lg:text-lg xl:text-xl mx-auto font-[450]">
+                    <div className=" text-[0.92rem] md:text-base md:text-md lg:text-lg xl:text-xl mx-auto font-normal dark:text-white text-gray-900 ">
                         <p className="mt-6 mb-12">
                             Hello world 👋 , yasier here, a skilled software developer, web
                             developer & UI-UX designer with a passion for creating intuitive and
@@ -48,11 +48,11 @@ export default function About() {
                             - B.E. and resides in mumbai.
                         </p>
 
-                        <p className="text-gray-400 select-none font-semibold mb-1">Current</p>
+                        <p className="text-gray-400 select-none font-semibold mb-1 dark:text-white/30 ">Current</p>
 
                         <p className="pb-12">
                             A
-                            <span className="font-nun font-extrabold mr-1 ">
+                            <span className=" font-semibold mr-1 ">
                                 <span className=" text-blue-400 ml-1">G</span>
                                 <span className=" text-red-400">o</span>
                                 <span className=" text-yellow-500">o</span>
@@ -70,7 +70,7 @@ export default function About() {
                             technology and getting acquainted with it.
                         </p>
 
-                        <p className="text-gray-400 select-none font-semibold mb-1">Contact</p>
+                        <p className="text-gray-400 select-none font-semibold mb-1 dark:text-white/30 ">Contact</p>
 
                         <p className="">
                             While I may not be a widely recognized figure, I am readily available
@@ -80,28 +80,27 @@ export default function About() {
                                 onClick={() =>
                                     navigator.clipboard.writeText('contact.yasier@gmail.com')
                                 }
-                                className="font-nun underline underline-offset-4 decoration-2 decoration-purple-400 group select-all font-extrabold dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select "
+                                className=" underline underline-offset-4 decoration-2 decoration-purple-400 group select-all font-semibold dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select "
                             >
                                 {' '}
                                 contact.yasier@gmail.com
                             </span>{' '}
-                            or linkedIn{' '}
+                            or linkedin{' '}
                             <a
                                 href="http://linkedin.com/in/yasier-ansari-711076222"
-                                className="font-nun underline underline-offset-4 decoration-2 decoration-purple-400 font-extrabold dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select"
+                                className=" underline underline-offset-4 decoration-2 decoration-purple-400 font-semibold dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select"
                                 rel="noopener noreferrer"
                                 target="blank"
                             >
                                 {' '}
                                 yasier-ansari{' '}
                             </a>{' '}
-                            <br />
                             Or you can dm me on insta{' '}
                             <a
                                 href="https://instagram.com/yasier_70"
                                 target="blank"
                                 rel="noopener noreferrer"
-                                className="font-nun font-extrabold underline underline-offset-4 decoration-2 decoration-purple-400 dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select "
+                                className=" font-semibold underline underline-offset-4 decoration-2 decoration-purple-400 dark:hover:text-purple-400 hover:text-purple-700 cursor-pointer select "
                             >
                                 {' '}
                                 @yasier_77{' '}

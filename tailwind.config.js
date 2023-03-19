@@ -62,11 +62,9 @@ module.exports = {
 
             fontFamily: {
                 space: ['Space Mono', 'monospace', 'sans-serif'],
-                quick: ['Quicksand', 'Inter', 'sans-serif'],
-                nun: ['Nunito', 'Inter', 'sans-serif'],
                 deca: ['Lexend Deca', 'Inter', 'sans-serif'],
-                dm: ['DM Sans', 'serif'],
                 app: ['Homemade Apple', 'cursive'],
+                out: ['Outfit', 'Inter', 'sans-serif']
             },
         },
     },

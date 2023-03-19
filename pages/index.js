@@ -21,15 +21,15 @@ export default function Home() {
                                     👋🏽
                                 </p>
                             </div>
-                            <p className="mt-12 font-medium tracking-wide max-w-lg base ">
-                                web developer,‎ <span className="font-bold text-blue-400 ">G</span>
-                                <span className="font-bold text-red-400">o</span>
-                                <span className="font-bold text-yellow-500">o</span>
-                                <span className="font-bold text-blue-400">g</span>
-                                <span className="font-bold text-green-400">l</span>
-                                <span className="font-bold text-red-400">e</span> ‎DSC Web Co-Lead,
+                            <p className="mt-12 text-base md:text-[1.1rem] lg:text-lg tracking-wide max-w-lg ">
+                                web developer,‎ <span className="font-semibold text-blue-400 ">G</span>
+                                <span className="font-semibold text-red-400">o</span>
+                                <span className="font-semibold text-yellow-500">o</span>
+                                <span className="font-semibold text-blue-400">g</span>
+                                <span className="font-semibold text-green-400">l</span>
+                                <span className="font-semibold text-red-400">e</span> ‎DSC Web Co-Lead,
                                 UI/UX designer and a lifelong learner based in{' '}
-                                <span className="font-[900] select-none animate-text bg-gradient-to-br from-[#ff911b] dark:from-[#ff8400] via-[#fff4f4] dark:via-[#fff] dark:text-black  text-border2 to-[#43ff36] dark:to-[#12ff02] rounded-full px-2 py-[0.05rem] ">
+                                <span className="font-semibold select-none animate-text bg-gradient-to-br from-[#ff911b] dark:from-[#ff8400] via-[#fff4f4] dark:via-[#fff] dark:text-black  text-border2 to-[#43ff36] dark:to-[#12ff02] rounded-full px-2 py-[0.05rem] ">
                                     ‎India‎
                                 </span>
                                 with a love for all things colorful & creative. When not coding,

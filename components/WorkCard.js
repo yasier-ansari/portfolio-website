@@ -40,18 +40,11 @@ const WorkCard = (props) => {
                 <div className="flex justify-between items-center">
                     <Link
                         href={`${props.link}`}
-                        className="font-deca tracking-wide font-bold text-[0.6rem] sm:text-sm md:text-md lg:text-lg xl:text-xl "
+                        className="font-deca dark:text-white tracking-wide font-semibold text-[0.6rem] sm:text-sm md:text-md lg:text-lg xl:text-xl "
                     >
                         {props.title}
                     </Link>
                     <div className="flex flex-row space-x-1 md:space-x-2 justify-between">
-                        {/* <SiJavascript className="h-4 w-4" />
-                        <SiTypescript className="h-4 w-4" />
-                        <IoLogoReact className="h-4 w-4" />
-                        <SiNextdotjs className="h-4 w-4" />
-                        <SiTailwindcss className="h-4 w-4" />
-                        <SiMongodb className="h-4 w-4" />
-                        <SiSolidity className="h-4 w-4" /> */}
                         {props.arr[0] && (
                             <SiJavascript className="w-2 h-2 sm:w-3 sm:h-3 md:h-4 md:w-4 lg:h-5 lg:w-5" />
                         )}
@@ -100,7 +93,7 @@ const WorkCard = (props) => {
                         )}
                     </div>
                 </div>
-                <div className="font-semibold cursor-text text-[0.5rem] sm:text-xs md:text-sm lg:text-[0.9rem] ">
+                <div className="font-medium tracking-[0.015rem] text-gray-800 dark:text-white/90 cursor-text text-[0.5rem] sm:text-xs md:text-sm lg:text-[0.9rem] ">
                     {props.description}
                 </div>
             </div>

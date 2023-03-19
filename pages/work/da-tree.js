@@ -35,21 +35,21 @@ const Datree = () => {
                     <h2 className=" mt-3 font-deca font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center">
                         Da-tree 🌲
                     </h2>{' '}
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
-                        Introducing da-tree, the next-generation linktree alternative that lets coders and tech enthusiasts build their own custom linktree-style websites in a breeze. No more generic templates or clunky interfaces - da-tree gives you the power to spin up a da-tree website by  <span class="font-bold">simply changing the JSON file.</span>
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white ">
+                        Introducing da-tree, the next-generation linktree alternative that lets coders and tech enthusiasts build their own custom linktree-style websites in a breeze. No more generic templates or clunky interfaces - da-tree gives you the power to spin up a da-tree website by  <span class="font-semibold">simply changing the JSON file.</span>
 
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
-                        Solo made this website using my usual fav, and can proudly say that this went out way better than expected. <span className="font-bold" >Made in just 2 days </span> in MLH hackathon, the purpose of this website was to make the newbie coders excited and make them learn nextjs,tailwindcss which are the tech of future. They are surely going to take over every tech stack in web development as one can see that they occupy more than 60% of the current market. Simple yet functional website to connect with the masses and especially fellow coders.
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white ">
+                        Solo made this website using my usual fav, and can proudly say that this went out way better than expected. <span className="font-semibold" >Made in just 2 days </span> in MLH hackathon, the purpose of this website was to make the newbie coders excited and make them learn nextjs,tailwindcss which are the tech of future. They are surely going to take over every tech stack in web development as one can see that they occupy more than 60% of the current market. Simple yet functional website to connect with the masses and especially fellow coders.
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white ">
                         Due to the only dependency being the necessity of technical knowledge, future scope could become to add a database server and custom server for every user to better take care of his/her customizability without the need of manually nextJs and tailwindCSS. Once we do that, da-tree would be competing in the general audience, which as of now is only for programmers or someone with some programming knowledge
 
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white ">
                         Whether you&apos;re looking to showcase your portfolio, promote your business, or share your passions with the world, da-tree makes it easier than ever. So why wait? Showcase the world your potential through da-tree today!
                     </p>
-                    <div className="grid grid-cols font-bold md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-12 mb-8">
+                    <div className="grid grid-cols font-medium md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-12 mb-8">
                         <div className="hover:text-purple-400 flex mx-aut space-x-2 md:space-x-3 items-center">
                             <SiGithub className=" w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <a

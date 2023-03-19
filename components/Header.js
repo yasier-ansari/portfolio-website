@@ -91,7 +91,7 @@ const Header = () => {
 
                 <div
                     onClick={() => setOpen(!open)}
-                    className="transition-all duration-500 ease-in order-3 text-lg flex flex-col space-y-[0.2rem]  cursor-pointer items-center font-bold md:hidden"
+                    className="transition-all duration-500 ease-in order-3 text-lg flex flex-col space-y-[0.2rem]  cursor-pointer items-center font-semibold md:hidden"
                 >
                     <div
                         className={` ${open && 'rotate-45 translate-y-[5px] '
@@ -107,19 +107,19 @@ const Header = () => {
                     ></div>
                 </div>
                 <ul
-                    className={` rounded-3xl md:rounded-none dark:bg-[#353535] bg-white  py-4 md:py-0 md:bg-inherit font-extrabold order-4 md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-light-blue md:bg-none md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:transition-none transition-all duration-500 ease-in ${open ? 'top-[3.5rem]' : 'top-[-490px]'
+                    className={` rounded-3xl md:rounded-none dark:bg-[#353535] bg-white  py-4 md:py-0 md:bg-inherit font-semibold order-4 md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-light-blue md:bg-none md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:transition-none transition-all duration-500 ease-in ${open ? 'top-[3.5rem]' : 'top-[-490px]'
                         }`}
                 >
                     {Links.map((link) => (
                         <li
                             key={link.name}
-                            className="md:ml-8  text-base xl:text-[1.1rem] font-regular md:my-0 my-7"
+                            className="md:ml-8 text-base lg:text-lg md:my-0 my-7"
                         >
                             <Link
                                 href={link.link}
                                 onClick={() => clickHandler(`${link.name}`)}
                                 className={` 
-                                ${router === link.link ? ' text-purple-400 font-black ' : ' text-gray-700 dark:text-white '}
+                                ${router === link.link ? ' text-purple-400 font-semibold ' : ' text-gray-700 dark:text-white '}
                                 hover:text-purple-500 dark:hover:text-purple-500 duration-500`}
                             >
                                 {link.name}

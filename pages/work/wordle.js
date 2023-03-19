@@ -35,7 +35,7 @@ const Port = () => {
                     <h2 className=" mt-3 font-deca font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center">
                         Wordle Clone
                     </h2>{' '}
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white">
                         As a creative individual with a passion for design, I couldn&apos;t resist
                         the opportunity to dive into the world of wordle and create my own project
                         while the game was still at its peak of popularity. I was excited to explore
@@ -44,12 +44,12 @@ const Port = () => {
                         process was easy and rewarding as I was able to reverse engineer its design
                         system.
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white">
                         I used HTML, CSS, Javascript and made a concrete and simple game logic which
                         was the backbone of wordle. The end result was a seamless and engaging
                         experience that truly captured the essence of the wordle game.
                     </p>
-                    <div className="grid grid-cols font-bold md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-8 mb-16">
+                    <div className="grid grid-cols font-medium md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-8 mb-16">
                         <div className="hover:text-purple-400 flex mx-aut space-x-2 md:space-x-3 items-center">
                             <SiGithub className=" w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <a

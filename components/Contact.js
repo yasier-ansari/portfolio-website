@@ -9,13 +9,13 @@ const Contact = () => {
                 <h2 className=" tracking-normal bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl font-bold font-deca selection:text-gray-700 dark:selection:text-white/90 ">
                     Get in touch{' '}
                 </h2>
-                <p className="text-sm md:text-md font-medium lg:text-lg xl:text-xl ">
+                <p className="text-sm md:text-md font-normal lg:text-lg xl:text-xl ">
                     If you have any queries or would like to discuss potential opportunities, please don&apos;t hesitate to reach out to me using given links.
                 </p>
                 <div className="grid grid-cols-2 text-[0.7rem] md:text-[0.85rem] lg:text-base gap-2 md:gap-3 lg:gap-4">
                     <a
                         href="mailto:yasier.contact@gmail.com"
-                        className=" flex align-middle items-center font-jak font-extrabold space-x-1 w-max "
+                        className=" flex align-middle items-center font-jak font-bold space-x-1 w-max "
                     >
                         <FiMail className="text-[#518FC7] dark:text-[#2498fe] h-3 w-3 md:h-4 md:w-4 " />
                         <h5 className="text-transparent dark:text-[#2498fe]">#yasier</h5>
@@ -24,7 +24,7 @@ const Contact = () => {
                         href="http://linkedin.com/in/yasier-ansari-711076222"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className=" flex align-middle items-center font-jak font-extrabold space-x-1 w-max "
+                        className=" flex align-middle items-center font-jak font-bold space-x-1 w-max "
                     >
                         <FiLinkedin className="text-[#CA6298] dark:text-[#ff339c] h-3 w-3 md:h-4 md:w-4 " />
                         <h5 className="text-transparent dark:text-[#ff339c]">yasier-ansari</h5>
@@ -33,7 +33,7 @@ const Contact = () => {
                         href="https://github.com/yasier-ansari"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className=" flex align-middle items-center font-jak font-extrabold space-x-1 w-max "
+                        className=" flex align-middle items-center font-jak font-bold space-x-1 w-max "
                     >
                         <FiGithub className="text-[#518FC7] dark:text-[#2498fe] h-3 w-3 md:h-4 md:w-4 " />
                         <h5 className="text-transparent dark:text-[#2498fe]">@noru</h5>
@@ -42,7 +42,7 @@ const Contact = () => {
                         href="https://instagram.com/yasier_70"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className=" flex align-middle items-center font-jak font-extrabold space-x-1 w-max "
+                        className=" flex align-middle items-center font-jak font-bold space-x-1 w-max "
                     >
                         <FiInstagram className="text-[#CA6298] dark:text-[#ff339c] h-3 w-3 md:h-4 md:w-4 " />
                         <h5 className="text-transparent dark:text-[#ff339c]">@yasier_77</h5>

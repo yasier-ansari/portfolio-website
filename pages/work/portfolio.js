@@ -42,14 +42,14 @@ const Port = () => {
                     <h2 className=" mt-3 font-deca font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center">
                         Portfolio Website
                     </h2>{' '}
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal dark:text-white text-gray-900">
                         After years procrastinating & neglecting the importance of having a
                         professional portfolio, I finally realized the value it holds in terms of
                         showcasing my skills and experiences to potential employers and clients. I
                         dedicated myself to creating a portfolio website that would effectively
                         highlight my abilities and achievements.
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal dark:text-white text-gray-900">
                         However, I soon realized that the process of creating a portfolio website is
                         not as simple as I had imagined. I spent a significant amount of time
                         researching and experimenting with different technologies and frameworks,
@@ -57,14 +57,14 @@ const Port = () => {
                         preferences. I wanted to create a website that was not only visually
                         appealing, but also easy to navigate and use.
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal dark:text-white text-gray-900">
                         The result was a website that I am quite proud of, despite its rough edges.
                         It&apos;s a jumbled yet sweet thing that showcases my past projects, my
                         skills, and my experiences in a coherent and organized manner. I&apos;m
                         confident that this portfolio will help me in my search for internships and
                         job opportunities in the future.
                     </p>
-                    <div className="grid grid-cols font-bold md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-8 mb-16">
+                    <div className="grid grid-cols font-medium md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-8 mb-16">
                         <div className="hover:text-purple-400 flex mx-aut space-x-2 md:space-x-3 items-center">
                             <SiGithub className=" w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <a

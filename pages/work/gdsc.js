@@ -42,13 +42,13 @@ const GDSC = () => {
                     <h2 className=" mt-3 font-deca font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center">
                         Google DSC Website
                     </h2>{' '}
-                    <p className="mt-8 text-xs tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white ">
                         Being the Web Co-Lead of campus GDSC, I had the responsibility of making the
                         website for the marketing and memeber gathering purpose.The requirements
                         were to make a simple , minimalist yet elegant website that will have the
                         same color palette provided by the Google Team.
                     </p>
-                    <p className="mt-8 text-xs tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white ">
                         I took on the task of designing and developing the website, utilizing modern
                         web development technologies such as ReactJs & Tailwindcss. I worked closely
                         with the Google DSC Web Team to ensure that the website matched color
@@ -57,7 +57,7 @@ const GDSC = () => {
                         effectively conveyed the message and mission of our organization, while also
                         being user-friendly and easy to navigate.
                     </p>
-                    <div className="grid grid-cols font-bold md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-8 mb-16">
+                    <div className="grid grid-cols font-medium md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-8 mb-16">
                         <div className="hover:text-purple-400 flex mx-aut space-x-2 md:space-x-3 items-center">
                             <SiGithub className=" w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <a

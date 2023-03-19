@@ -36,7 +36,7 @@ const Zeyn = () => {
                     <h2 className=" mt-3 font-deca font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center">
                         Zeyn e-Commerce
                     </h2>{' '}
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white">
                         Our year-wise Project, the ultimate e-commerce solution for native android.
                         Built using the latest Java and Kotlin programming languages and the Android
                         SDK, our app is designed to provide a seamless and efficient shopping
@@ -80,7 +80,7 @@ const Zeyn = () => {
                             />
                         </div>
                     </div>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white">
                         One of the key features of ZEYN Ecom is its lightning fast loading times,
                         thanks to the use of Firebase database. This means that customers can browse
                         and purchase products in real-time, without any lag or delay.Our app also
@@ -88,11 +88,11 @@ const Zeyn = () => {
                         showcase the excellent products offered by our company. For better online
                         visibility, we even made ourself a website for ZEYN e-Commerce.
                     </p>
-                    <div className="grid grid-cols font-bold md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-16 mb-10">
+                    <div className="grid grid-cols font-medium md:grid-cols-2 gap-2 text-xs sm:text-sm lg:text-base text-[450] mx-auto items-center md:gap-x-20 lg:gap-x-28 justify-center mt-16 mb-10">
                         <div className="hover:text-purple-400 flex mx-aut space-x-2 md:space-x-3 items-center">
                             <SiGithub className=" w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <a
-                                href="https://github.com/yasier-ansari/Wordle"
+                                href="https://github.com/drocgoesongit/Ecom"
                                 target="blank"
                                 rel="noopener noreferrer"
                             >
@@ -102,7 +102,7 @@ const Zeyn = () => {
                         <div className="hover:text-purple-400 flex mx-auto space-x-2 md:space-x-3 items-center">
                             <IoBrowsersOutline className=" w-[0.73rem] h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                             <a
-                                href="https://yasier-ansari.github.io/Wordle/"
+                                href="https://github.com/yasier-ansari"
                                 target="blank"
                                 rel="noopener noreferrer"
                             >

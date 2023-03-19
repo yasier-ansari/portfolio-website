@@ -1,7 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://yasier.in',
+    siteUrl: 'https://www.yasier.in',
     changefreq: 'daily',
-    generateRobotsTxt: true, // (optional)
-    // ...other options
+    generateRobotsTxt: true,
 }

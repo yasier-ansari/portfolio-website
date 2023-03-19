@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://yasier.in
+Host: https://www.yasier.in
 
 # Sitemaps
-Sitemap: https://yasier.in/sitemap.xml
+Sitemap: https://www.yasier.in/sitemap.xml

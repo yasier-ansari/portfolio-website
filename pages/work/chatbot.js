@@ -7,7 +7,7 @@ const Chatbot = () => {
     return (
         <div className="px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-7xl">
             <Head>
-                <title>ai bot ✨noru </title>
+                <title> AI Bot ☁️ Yasier Ansari </title>
             </Head>
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-20 mx-auto ">
@@ -32,13 +32,13 @@ const Chatbot = () => {
                     <h2 className=" mt-3 font-deca font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center">
                         Munna AI chatbot
                     </h2>{' '}
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white">
                         For the Smart India Hackathon, better known as SIH, we as a team of 5 chose
                         the chatbot and enquiry domain to do our work. We were tasked to make a
                         chatbot for helping the enquiry and detail team in the collective government
                         sectors
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white">
                         Our team began by researching and analyzing the current chatbot systems used
                         in government sectors and identifying areas where improvements could be
                         made. We then started designing and developing the chatbot, keeping in mind
@@ -51,7 +51,7 @@ const Chatbot = () => {
                         government policies, to provide users with accurate and up-to-date
                         information.
                     </p>
-                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-[450]">
+                    <p className="mt-8 tracking-normal text-sm leading-5 sm:text-base lg:text-lg mx-auto font-normal text-gray-900 dark:text-white">
                         Our team presented the chatbot at the Smart India Hackathon and received
                         positive feedback from the judges and that led to us being the top 5 teams
                         in intra college level.

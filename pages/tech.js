@@ -13,17 +13,17 @@ export default function Tech() {
             main: '/vscode-icon.svg',
             desc: 'Best coding IDE to ever exist,comes with tons of customization',
             tag: 'code',
-            bg: '#ffbce0',
-            text: '#ff00bf',
+            bg: 'bg-blue-50',
+            text: 'text-blue-500',
         },
         {
             title: 'Slack',
             id: 1,
             main: '/slack-icon.svg',
-            desc: 'A social platform specially developed for programmers and slick coders',
+            desc: 'A social platform for slick coders and nightly creatures called programmers',
             tag: 'daily',
-            bg: '#cfffc8',
-            text: '#336e09',
+            bg: 'bg-emerald-50',
+            text: 'text-emerald-700',
         },
         {
             title: 'Discord',
@@ -31,8 +31,8 @@ export default function Tech() {
             main: '/discord-icon.svg',
             desc: 'Discord ultimate hangout spot, home to many bots such as midjourney ',
             tag: 'daily',
-            bg: '#cfffc8',
-            text: '#336e09',
+            bg: 'bg-emerald-50',
+            text: 'text-emerald-700',
         },
         {
             title: 'Sky of light',
@@ -40,8 +40,8 @@ export default function Tech() {
             main: '/sky-game.jpeg',
             desc: 'A world of beauty and serenity, crafted and accompanied by soothing music ',
             tag: 'zen',
-            bg: '#ebddff',
-            text: '#55209a',
+            bg: 'bg-purple-100',
+            text: 'text-purple-500',
         },
         {
             title: 'Github',
@@ -49,8 +49,8 @@ export default function Tech() {
             main: '/github-icon.svg',
             desc: `A developer's go-to platform for collaborating and showcasing their code`,
             tag: 'code',
-            bg: '#ffbce0',
-            text: '#ff00bf',
+            bg: 'bg-blue-50',
+            text: 'text-blue-500',
         },
         {
             title: 'Next-js',
@@ -58,8 +58,8 @@ export default function Tech() {
             main: '/nextjs-icon.svg',
             desc: 'The GOAT metaframework for reactJs that comes with SSR and other features',
             tag: 'code',
-            bg: '#ffbce0',
-            text: '#ff00bf',
+            bg: 'bg-blue-50',
+            text: 'text-blue-500',
         },
         {
             title: 'Osu!',
@@ -67,8 +67,8 @@ export default function Tech() {
             main: '/osu-logo.png',
             desc: 'OG F2P anime rhythm game coming way back from 2007, one of my favorite ',
             tag: 'zen',
-            bg: '#ebddff',
-            text: '#55209a',
+            bg: 'bg-purple-100',
+            text: 'text-purple-500',
         },
         {
             title: 'Typescript',
@@ -76,8 +76,8 @@ export default function Tech() {
             main: '/typescript-icon.svg',
             desc: 'SuperScript of Javascript, made by microsoft with robust type safety',
             tag: 'code',
-            bg: '#ffbce0',
-            text: '#ff00bf',
+            bg: 'bg-blue-50',
+            text: 'text-blue-500',
         },
         {
             title: 'Figma',
@@ -85,8 +85,8 @@ export default function Tech() {
             main: '/figma-icon.svg',
             desc: 'A boon for webapp designers, from wireframe to animation, it has it all ',
             tag: 'design',
-            bg: '#ffaa5a',
-            text: '#814404',
+            bg: 'bg-orange-100',
+            text: 'text-orange-600',
         },
         {
             title: 'Notion',
@@ -94,8 +94,8 @@ export default function Tech() {
             main: '/notion-icon.svg',
             desc: 'The most used, well designed, versatile and professional productivity app',
             tag: 'daily',
-            bg: '#cfffc8',
-            text: '#336e09',
+            bg: 'bg-emerald-50',
+            text: 'text-emerald-700',
         },
         {
             title: 'jetBrains IDEs',
@@ -103,8 +103,8 @@ export default function Tech() {
             main: '/jetbrains-icon.svg',
             desc: 'No one can beat JB in IDE market, especially PyCharm and IntelliJ ',
             tag: 'code',
-            bg: '#ffbce0',
-            text: '#ff00bf',
+            bg: 'bg-blue-50',
+            text: 'text-blue-500',
         },
         {
             title: 'MongoDB',
@@ -112,8 +112,8 @@ export default function Tech() {
             main: '/mongodb-icon.svg',
             desc: 'A scalable and reliable No-SQL database solution for professional use',
             tag: 'code',
-            bg: '#ffbce0',
-            text: '#ff00bf',
+            bg: 'bg-blue-50',
+            text: 'text-blue-500',
         },
         {
             title: 'Canva',
@@ -121,8 +121,8 @@ export default function Tech() {
             main: '/canva-icon.svg',
             desc: ' Free and with ton of templates, a prefect alternative of photoshop ',
             tag: 'design',
-            bg: '#ffaa5a',
-            text: '#814404',
+            bg: 'bg-orange-100',
+            text: 'text-orange-600',
         },
         {
             title: 'Firebase',
@@ -130,8 +130,8 @@ export default function Tech() {
             main: '/firebase-icon.svg',
             desc: 'helps developers to build, manage, and grow their apps with ease ',
             tag: 'code',
-            bg: '#ffbce0',
-            text: '#ff00bf',
+            bg: 'bg-blue-50',
+            text: 'text-blue-500',
         },
         {
             title: 'MonkeyType',
@@ -139,8 +139,8 @@ export default function Tech() {
             main: '/mt-icon.png',
             desc: 'minimal and powerful tool to track and improve your  typing habits',
             tag: 'zen',
-            bg: '#ebddff',
-            text: '#55209a',
+            bg: 'bg-purple-100',
+            text: 'text-purple-500',
         },
     ];
     const [idNumber, setIdNumber] = useState(0);
@@ -162,18 +162,18 @@ export default function Tech() {
         }
     };
     return (
-        <div className="px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 xl:px-80 mx-auto">
+        <div className="min-h-[75vh] md:min-h-[73vh] px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 xl:px-80 mx-auto">
             <Head>
-                <title>noru ✨ tools I use ✨ </title>
+                <title> Tools I use ☁️ Yasier Ansari </title>
 
             </Head>
-            <main className="lg:min-h-screen max-w-screen max-w-5xl mx-auto">
+            <main className=" max-w-screen max-w-5xl mx-auto">
                 <div className="pt-24 flex flex-col mx-auto">
-                    <h2 className="bg-gradient-to-br to-yellow-200 from-red-500 bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-deca font-bold ">
+                    <h2 className="bg-gradient-to-br dark:selection:text-white/80 selection:text-black/70 to-yellow-200 from-red-500 bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-deca font-bold ">
                         Tech-stack
                     </h2>
-                    <p className="mt-8 font-medium text-center md:w-[70%] mx-auto text-sm md:text-base ">
-                        Just like any other programmer, I also spend more time searching and
+                    <p className="mt-8 font-normal lg:text-lg text-center md:w-[70%] mx-auto text-base md:text-[1.15rem] ">
+                        Just like any other dev, I also spend more time searching and
                         experimenting tools than actually coding some senseful things 😎
                     </p>
                 </div>
@@ -204,12 +204,12 @@ export default function Tech() {
                                     {data[idNumber].title}
                                 </h3>
                                 <div
-                                    className={`bg-[${data[idNumber].bg}] text-[${data[idNumber].text}] text-[0.45rem] sm:text-[0.6rem] md:text-xs sm:px-1 lg:px-2 rounded-xl h-max font-nun font-bold`}
+                                    className={` ${data[idNumber].bg} ${data[idNumber].text} text-[0.45rem] sm:text-[0.6rem] md:text-xs sm:px-1 lg:px-2 rounded-xl h-max fon font-bold`}
                                 >
                                     {data[idNumber].tag}
                                 </div>
                             </div>
-                            <p className=" text-[0.58rem] sm:text-[0.7rem] md:text-[0.9rem] lg:text-base font-[500] md:w-[90%] ">
+                            <p className=" text-[0.58rem] sm:text-[0.7rem] md:text-[0.9rem] md:text-base lg:text-[1.015rem] font-normal md:w-[90%] ">
                                 {data[idNumber].desc}
                             </p>
                         </div>
