@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import CategoryCard from '../components/About-cat';
-import aboutImage from '../public/image.png'
+import aboutImage from '../public/image.png';
 import { useTheme } from 'next-themes';
 
 export default function About() {
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme } = useTheme();
     return (
         <div className="px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto">
             <Head>
@@ -15,7 +15,7 @@ export default function About() {
                 <div className=" mx-auto pt-16 -pb-10 max-w-7xl">
                     <div className=" mx-auto flex flex-col ">
                         <h2
-                            className={`mt-6 mb-12 font-deca bg-gradient-to-br to-blue-500 via-red-400/90 from-yellow-500  bg-clip-text text-transparent selection:text-gray-700 dark:selection:text-white/90 items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`}
+                            className={`mt-6 mb-12 font-sat bg-gradient-to-br to-blue-500 via-red-400/90 from-yellow-500  bg-clip-text text-transparent selection:text-gray-700 dark:selection:text-white/90 items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
                         >
                             About
                         </h2>
@@ -44,11 +44,13 @@ export default function About() {
                         <p className="mt-6 mb-12">
                             Hello world 👋 , yasier here, a skilled software developer, web
                             developer & UI-UX designer with a passion for creating intuitive and
-                            functional applications with clean code advocacy. Currently pursuing my 4 year Bachelors program
-                            - B.E. and resides in mumbai.
+                            functional applications with clean code advocacy. Currently pursuing my
+                            4 year Bachelors program - B.E. and resides in mumbai.
                         </p>
 
-                        <p className="text-gray-400 select-none font-semibold mb-1 dark:text-white/30 ">Current</p>
+                        <p className="text-gray-400 select-none font-semibold mb-1 dark:text-white/30 ">
+                            Current
+                        </p>
 
                         <p className="pb-12">
                             A
@@ -70,7 +72,9 @@ export default function About() {
                             technology and getting acquainted with it.
                         </p>
 
-                        <p className="text-gray-400 select-none font-semibold mb-1 dark:text-white/30 ">Contact</p>
+                        <p className="text-gray-400 select-none font-semibold mb-1 dark:text-white/30 ">
+                            Contact
+                        </p>
 
                         <p className="">
                             While I may not be a widely recognized figure, I am readily available

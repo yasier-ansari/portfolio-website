@@ -9,7 +9,7 @@ export default function Work() {
             <main className="min-h-screen max-w-screen ">
                 <div className="pt-24 flex flex-col items-center mx-auto">
                     <h2
-                        className={` selection:text-black/40 dark:selection:text-white/40 font-deca bg-gradient-to-tr from-teal-300 to-blue-500 bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`}
+                        className={` selection:text-black/40 font-sat dark:selection:text-white/40  bg-gradient-to-tr from-teal-300 to-blue-500 bg-clip-text text-transparent items-center mx-auto text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black`}
                     >
                         Works
                     </h2>
@@ -48,7 +48,7 @@ export default function Work() {
                         }
                         arr={[1, null, 1, null, 1, null, null, null]}
                         img={'portfolio/gdsc-main_gnptrp'}
-                        alt={"gdsc-website"}
+                        alt={'gdsc-website'}
                     />
                     <WorkCard
                         title={'Portfolio'}
@@ -56,7 +56,7 @@ export default function Work() {
                         description={`full of life & colorful website you're seeing right now, is also a work of mine 😁`}
                         arr={[1, null, null, 1, 1, null, null, null]}
                         img={'portfolio/port_q37won'}
-                        alt={"portoflio-website"}
+                        alt={'portoflio-website'}
                     />
                     <WorkCard
                         title={'muPy Chatbot'}
@@ -85,7 +85,7 @@ export default function Work() {
                     <WorkCard
                         title={'wordle Clone'}
                         link={'/work/wordle'}
-                        alt={"wordle-clone"}
+                        alt={'wordle-clone'}
                         description={
                             'A fully fledged working clone of a popular word puzzle game by Times, Wordle'
                         }
@@ -132,7 +132,7 @@ export default function Work() {
                             1,
                         ]}
                         img={'portfolio/zeyn-main_rlkyvj'}
-                        alt={"zeyn-ecomm"}
+                        alt={'zeyn-ecomm'}
                     />
                     <WorkCard
                         title={'Da-tree '}
@@ -159,7 +159,7 @@ export default function Work() {
                             null,
                         ]}
                         img={'portfolio/da-tree_wx1q6z'}
-                        alt={"da-tree"}
+                        alt={'da-tree'}
                     />
                     <WorkCard
                         title={'Cryplog '}
@@ -186,7 +186,7 @@ export default function Work() {
                             null,
                         ]}
                         img={'portfolio/cryplog-1_xh93ti'}
-                        alt={"cryplog"}
+                        alt={'cryplog'}
                     />
                 </div>
             </main>

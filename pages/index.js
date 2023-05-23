@@ -3,9 +3,11 @@ import Contact from '../components/Contact';
 import Blob from '../components/Blob';
 import Experience from '../components/Experience';
 import { useTheme } from 'next-themes';
-import Main from '../public/image.png'
+import Main from '../public/image.png';
+import { signIn, useSession } from "next-auth/react";
 export default function Home() {
     const { theme, setTheme } = useTheme();
+    const { data: session } = useSession();
     return (
         <>
             <div className=" lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[90rem]">
@@ -17,23 +19,24 @@ export default function Home() {
                                 <h2 className="font-space animate-text bg-gradient-to-r selection:text-gray-500 dark:selection:text-white/80 from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-3xl lg:text-4xl xl:text-5xl font-black">
                                     yasier_{' '}
                                 </h2>
-                                <p className="wave text-2xl select-none sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl origin-bottom-right " >
+                                <p className="wave text-2xl select-none sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl origin-bottom-right ">
                                     👋🏽
                                 </p>
                             </div>
                             <p className="mt-12 text-base md:text-[1.1rem] lg:text-lg tracking-wide max-w-lg ">
-                                web developer,‎ <span className="font-semibold text-blue-400 ">G</span>
+                                web developer,‎{' '}
+                                <span className="font-semibold text-blue-400 ">G</span>
                                 <span className="font-semibold text-red-400">o</span>
                                 <span className="font-semibold text-yellow-500">o</span>
                                 <span className="font-semibold text-blue-400">g</span>
                                 <span className="font-semibold text-green-400">l</span>
-                                <span className="font-semibold text-red-400">e</span> ‎DSC Web Co-Lead,
-                                UI/UX designer and a lifelong learner based in{' '}
+                                <span className="font-semibold text-red-400">e</span> ‎DSC Web
+                                Co-Lead, UI/UX designer and a lifelong learner based in{' '}
                                 <span className="font-semibold select-none animate-text bg-gradient-to-br from-[#ff911b] dark:from-[#ff8400] via-[#fff4f4] dark:via-[#fff] dark:text-black  text-border2 to-[#43ff36] dark:to-[#12ff02] rounded-full px-2 py-[0.05rem] ">
                                     ‎India‎
                                 </span>
-                                with a love for all things colorful & creative. When not coding,
-                                😽 cats and 📖 books are my escape plan.
+                                with a love for all things colorful & creative. When not coding, 😽
+                                cats and 📖 books are my escape plan.
                             </p>
                         </div>
                         <Image
@@ -41,7 +44,7 @@ export default function Home() {
                             src={Main}
                             width="600"
                             height="400"
-                            alt='main image'
+                            alt="main image"
                             sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           33vw"
@@ -65,6 +68,13 @@ export default function Home() {
                 <Experience />
                 <div className="mt-28 mx-auto ">
                     <Contact />
+                </div>
+                <div>
+                    <h2>
+                        <button onClick={() => signIn('github')} >
+                            Signin with github
+                        </button>
+                    </h2>
                 </div>
             </div>
         </>

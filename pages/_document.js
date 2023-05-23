@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Signout from "../components/Signout";
 
 export default function Document() {
     return (
@@ -57,6 +58,7 @@ export default function Document() {
             <body className="back font-out mx-auto bg-[#fffdfd] dark:bg-[#242424] overflow-x-hidden lg:transform-gpu ">
                 <Main />
                 <NextScript />
+                {/* <Signout /> */}
             </body>
         </Html>
     );

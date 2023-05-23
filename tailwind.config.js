@@ -34,7 +34,7 @@ module.exports = {
                 },
                 heroBlob: {
                     '0%, 100%': {
-                        'border-radius': '60% 40% 30% 70%/ 60% 30% 70% 40%'
+                        'border-radius': '60% 40% 30% 70%/ 60% 30% 70% 40%',
                     },
                     '25%': { 'border-radius': '45% 50% 50% 55%/ 55% 45% 50% 30%' },
                     '50%': { 'border-radius': '30% 60% 70% 40%/ 50% 60% 30% 40%' },
@@ -49,7 +49,7 @@ module.exports = {
                     '60%': { transform: 'rotate(10.0deg)' },
                     '70%': { transform: 'rotate(0.0deg)' },
                     '100%': { transform: 'rotate(0.0deg)' },
-                }
+                },
             },
             animation: {
                 text: 'text 5s ease infinite',
@@ -64,7 +64,8 @@ module.exports = {
                 space: ['Space Mono', 'monospace', 'sans-serif'],
                 deca: ['Lexend Deca', 'Inter', 'sans-serif'],
                 app: ['Homemade Apple', 'cursive'],
-                out: ['Outfit', 'Inter', 'sans-serif']
+                out: ['Outfit', 'Inter', 'sans-serif'],
+                sat: ['Satoshi', 'sans-serif'],
             },
         },
     },

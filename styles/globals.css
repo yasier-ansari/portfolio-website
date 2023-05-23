@@ -1,7 +1,13 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,300,400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Satoshi';
+    src: url("https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,300,400&display=swap");
+}
 *::selection {
     @apply bg-emerald-100 dark:bg-purple-400/70;
 }
