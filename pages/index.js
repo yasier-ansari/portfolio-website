@@ -4,7 +4,6 @@ import Blob from '../components/Blob';
 import Experience from '../components/Experience';
 import { useTheme } from 'next-themes';
 import Main from '../public/image.png'
-import Head from "next/head";
 import { NextSeo } from "next-seo";
 import seoConfig from "../utils/seoConfig";
 export default function Home() {

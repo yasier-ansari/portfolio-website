@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import WorkCard from '../components/WorkCard';
+import { CldImage } from "next-cloudinary";
 import { NextSeo } from "next-seo";
 import seoConfig from "../utils/seoConfig";
 export default function Work() {

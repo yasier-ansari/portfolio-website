@@ -65,7 +65,7 @@ const seoConfig = {
         robots: "index, follow",
         openGraph: {
             title: "Mark it! 📍 | Yasier Ansari",
-            description: "Leave a message for me and others! Share thoughts, appreciation, criticism or anything. I'm always eager to hear some encouraging words 🥰",
+            description: "Leave a message for me and others! Share thoughts, appreciation, criticism or anything.",
             type: "website",
             url: "https://www.yasier.in/mark",
             images: [
@@ -79,12 +79,9 @@ const seoConfig = {
             image: "https://res.cloudinary.com/yasier/image/upload/c_fill,e_auto_saturation,g_center,h_945,q_90,w_1800/v1676054986/seo/mark_vcjwzs.jpg",
         },
         twitter: {
-            handle: '@Yasier_noru',
+            title: 'Yasier Ansari | Web Dev',
+            site: '@Yasier_noru',
             cardType: 'summary_large_image',
-            site: 'https://.yasier.in',
-            title: "Mark it! 📍 | Yasier Ansari",
-            description: "Leave a message for me and others! Share thoughts, appreciation, criticism or anything.",
-            image: "https://res.cloudinary.com/yasier/image/upload/c_fill,e_auto_saturation,g_center,h_750,q_80,w_1500/v1676054986/seo/mark_vcjwzs.jpg",
         },
         canonical: "https://yasier.in/mark"
     },

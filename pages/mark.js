@@ -126,33 +126,7 @@ const Mark = () => {
                             Leave a message for me and others! Share thoughts, appreciation,criticism or
                             anything.
                         </p>
-                        {/* {
-                        !loggedin ? (
-                            <>
-                                <div className="select-none flex flex-col w-[85%] animate-pulse dark:bg-stone-500/30 bg-stone-100 border-2 border-stone-300 dark:border-stone-700 p-4 rounded-xl  sm:w-[75%] md:w-[65%] max-w-3xl justify-center space-y-6 items-center mt-2 text-gray-400">
-                                    <div className="flex items-center w-full space-x-2 max-w-[350px]">
-                                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-                                    </div>
-                                    <div className="flex items-center w-full space-x-2 max-w-[400px]">
-                                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-                                    </div>
-                                    <div className="flex items-center w-full space-x-2 max-w-[350px]">
-                                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-                                    </div>
-                                    <div className="flex items-center w-full space-x-2 max-w-[400px]">
-                                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-                                    </div>
-                                </div>
-                            </>
-                        ) : (
+                        {
                             !userInfo ? (
                                 <div className="select-none flex w-[85%] sm:w-[75%] md:w-[65%] max-w-3xl justify-center space-x-4 items-center mt-2 text-gray-400">
                                     <div className="flex mx-auto items-center bg-gradient-to-tr px-4 md:px-6 lg:px-10 py-2 md:py-4 lg:pb-6 rounded-lg dark:from-[#eefcff20] dark:via-[#faf5ff30] dark:to-[#fff2ec15] from-[#ebeded] via-[#e7e6e8] to-[#eae6e5] lg:bg-gradient-to-tr lg:hover:dark:from-[#eefcff20] lg:hover:dark:via-[#faf5ff30] lg:hover:dark:to-[#fff2ec15] flex-col gap-2 ">
@@ -189,8 +163,7 @@ const Mark = () => {
                                     </form>
                                 </div>
                             )
-                        )
-                    } */}
+                        }
                         <div className="flex justify-center select-none space-x-8 items-center mt-12">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -229,29 +202,29 @@ const Mark = () => {
                                     </div>
                                     <p className="text-[1.05rem]" >hello there, welcome to mark area, be sure to spread positivity here ✌🏻🍀🕊️☮️ </p>
                                 </div>
-                                {/* {
-                                data?.map((el, idx) => (
-                                    <div key={idx} className="flex flex-col w-[85%] sm:w-[75%] md:w-[65%] max-w-5xl p-4 md:p-5 lg:p-6 space-y-4 rounded-xl border-[0.1px] border-stone-300 shadow-xl  dark:border-zinc-500  " >
-                                        <div className="flex justify-between items-center" >
-                                            <div className="flex items-center h-max " >
-                                                <Image src={el?.userProfile.imgUrl} width={50} height={50} alt="user" className="rounded-full mr-3" />
-                                                <div className="flex flex-col -space-y-2 " >
-                                                    <p className="text-lg md:text-xl xl:text-2xl " >{el?.userProfile.name}</p>
-                                                    <p>@{el?.userProfile.githubUsername}</p>
+                                {
+                                    data?.map((el, idx) => (
+                                        <div key={idx} className="flex flex-col w-[85%] sm:w-[75%] md:w-[65%] max-w-5xl p-4 md:p-5 lg:p-6 space-y-4 rounded-xl border-[0.1px] border-stone-300 shadow-xl  dark:border-zinc-500  " >
+                                            <div className="flex justify-between items-center" >
+                                                <div className="flex items-center h-max " >
+                                                    <Image src={el?.userProfile.imgUrl} width={50} height={50} alt="user" className="rounded-full mr-3" />
+                                                    <div className="flex flex-col -space-y-2 " >
+                                                        <p className="text-lg md:text-xl xl:text-2xl " >{el?.userProfile.name}</p>
+                                                        <p>@{el?.userProfile.githubUsername}</p>
+                                                    </div>
                                                 </div>
+                                                <a href={`https://github.com/${el?.userProfile?.githubUsername}`} className="rounded-lg p-2 lg:p-3 bg-purple-100 " target="_blank" rel="noreferrer" >
+                                                    <FiGithub className="w-4 h-4 md:w-5 md:h-5 xl:w-6 xl:h-6 " />
+                                                </a>
                                             </div>
-                                            <a href={`https://github.com/${el?.userProfile?.githubUsername}`} className="rounded-lg p-2 lg:p-3 bg-purple-100 " target="_blank" rel="noreferrer" >
-                                                <FiGithub className="w-4 h-4 md:w-5 md:h-5 xl:w-6 xl:h-6 " />
-                                            </a>
+                                            <p className="text-[1.05rem] " >{el?.tweet?.tweet} </p>
+                                            <div className="flex justify-between text-xs text-gray-600 " >
+                                                <p>{el?.tweet?.createdAt?.toDate().toLocaleDateString()}</p>
+                                                <p>{el?.tweet?.createdAt?.toDate().toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', hour12: true })}</p>
+                                            </div>
                                         </div>
-                                        <p className="text-[1.05rem] " >{el?.tweet?.tweet} </p>
-                                        <div className="flex justify-between text-xs text-gray-600 " >
-                                            <p>{el?.tweet?.createdAt?.toDate().toLocaleDateString()}</p>
-                                            <p>{el?.tweet?.createdAt?.toDate().toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', hour12: true })}</p>
-                                        </div>
-                                    </div>
-                                ))
-                            } */}
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>
