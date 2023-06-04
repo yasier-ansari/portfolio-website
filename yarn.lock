@@ -2035,6 +2035,11 @@
     "@cloudinary-util/util" "^2.0.0"
     "@cloudinary/url-gen" "^1.8.6"
 
+"next-seo@^6.0.0":
+  "integrity" "sha512-jKKt1p1z4otMA28AyeoAONixVjdYmgFCWwpEFtu+DwRHQDllVX3RjtyXbuCQiUZEfQ9rFPBpAI90vDeLZlMBdg=="
+  "resolved" "https://registry.npmjs.org/next-seo/-/next-seo-6.0.0.tgz"
+  "version" "6.0.0"
+
 "next-sitemap@^4.0.6":
   "integrity" "sha512-pZ9tynYe6mRR189qZqcOlWVgM1Gxo07BJQW0AjerKmLwQOt+6FQMdaDgifgCt6jDT3Y3EG/+NUDDZRcd0gbPkA=="
   "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-4.0.6.tgz"
@@ -2048,7 +2053,7 @@
   "resolved" "https://registry.npmjs.org/next-themes/-/next-themes-0.2.1.tgz"
   "version" "0.2.1"
 
-"next@*", "next@^12 || ^13", "next@13.0.7":
+"next@*", "next@^12 || ^13", "next@^8.1.1-canary.54 || >=9.0.0", "next@13.0.7":
   "integrity" "sha512-YfTifqX9vfHm+rSU/H/3xvzOHDkYuMuh4wsvTjiqj9h7qHEF7KHB66X4qrH96Po+ohdid4JY8YVGPziDwdXL0A=="
   "resolved" "https://registry.npmjs.org/next/-/next-13.0.7.tgz"
   "version" "13.0.7"
@@ -2385,7 +2390,7 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
-"react-dom@*", "react-dom@^18.2.0", "react-dom@>=16", "react-dom@18.2.0":
+"react-dom@*", "react-dom@^18.2.0", "react-dom@>=16", "react-dom@>=16.0.0", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -2424,7 +2429,7 @@
     "prop-types" "^15.7.2"
     "react-intersection-observer" "^8.26.2"
 
-"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^17 || ^18", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.2.0":
+"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^17 || ^18", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@>=16.0.0", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

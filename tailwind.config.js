@@ -62,8 +62,7 @@ module.exports = {
 
             fontFamily: {
                 space: ['Space Mono', 'monospace', 'sans-serif'],
-                deca: ['Lexend Deca', 'Inter', 'sans-serif'],
-                app: ['Homemade Apple', 'cursive'],
+                app: ['Sedgwick Ave', 'cursive'],
                 out: ['Outfit', 'Inter', 'sans-serif'],
             },
         },

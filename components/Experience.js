@@ -79,7 +79,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
-                    <div className="mx-auto text-center font-deca font-bold text-xl dark:text-blue-400 text-blue-500   ">
+                    <div className="mx-auto text-center font-bold text-xl dark:text-blue-400 text-blue-500   ">
                         Design
                     </div>
                     <div className="font-normal sm:text-[0.95rem] md:text-base px-2 lg:text-lg ">
@@ -110,7 +110,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="self-start drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
-                    <div className="mx-auto text-center font-bold font-deca text-xl dark:text-purple-300 text-purple-500 ">
+                    <div className="mx-auto text-center font-bold text-xl dark:text-purple-300 text-purple-500 ">
                         BlockChain
                     </div>
                     <div className="font-normal sm:text-[0.95rem] md:text-base px-2 lg:text-lg ">
@@ -142,7 +142,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className=" self-start lg:self-end drop-shadow-xl flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4  rounded-tl-none hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:translate-x-2 bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
-                    <div className="mx-auto text-center font-deca tracking-wide font-bold text-xl text-orange-500  ">
+                    <div className="mx-auto text-center tracking-wide font-bold text-xl text-orange-500  ">
                         A.I.{' '}
                     </div>
                     <div className="font-normal sm:text-[0.95rem] md:text-base px-2 lg:text-lg ">

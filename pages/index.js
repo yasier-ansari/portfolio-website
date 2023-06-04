@@ -4,10 +4,14 @@ import Blob from '../components/Blob';
 import Experience from '../components/Experience';
 import { useTheme } from 'next-themes';
 import Main from '../public/image.png'
+import Head from "next/head";
+import { NextSeo } from "next-seo";
+import seoConfig from "../utils/seoConfig";
 export default function Home() {
     const { theme, setTheme } = useTheme();
     return (
         <>
+            <NextSeo {...seoConfig.default} />
             <div className="  lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[90rem]">
                 <div className="lg:h-screen 2xl:h-max max-w-[90rem] mx-auto">
                     <Blob />
