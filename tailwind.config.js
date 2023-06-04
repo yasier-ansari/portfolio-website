@@ -64,7 +64,7 @@ module.exports = {
                 space: ['Space Mono', 'monospace', 'sans-serif'],
                 deca: ['Lexend Deca', 'Inter', 'sans-serif'],
                 app: ['Homemade Apple', 'cursive'],
-                out: ['Outfit', 'Inter', 'sans-serif']
+                out: ['Outfit', 'Inter', 'sans-serif'],
             },
         },
     },

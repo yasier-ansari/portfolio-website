@@ -8,20 +8,20 @@ export default function Home() {
     const { theme, setTheme } = useTheme();
     return (
         <>
-            <div className=" lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[90rem]">
+            <div className="  lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[90rem]">
                 <div className="lg:h-screen 2xl:h-max max-w-[90rem] mx-auto">
                     <Blob />
                     <div className=" flex flex-col justify-center  lg:flex-row md:pt-12 lg:space-x-20 items-center lg:justify-between">
                         <div className="flex flex-col md:-mt-12 lg:basis-[50%] space-y-12 ">
-                            <div className="flex mt-20 -mb-3 -space-x-0 items-end justify-center lg:justify-start">
-                                <h2 className="font-space animate-text bg-gradient-to-r selection:text-gray-500 dark:selection:text-white/80 from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-3xl lg:text-4xl xl:text-5xl font-black">
+                            <div className="flex mt-20  -mb-3 -space-x-0 items-end justify-center lg:justify-start">
+                                <h2 className="font-space  animate-text bg-gradient-to-r selection:text-gray-500 dark:selection:text-white/80 from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-3xl lg:text-4xl xl:text-5xl font-black">
                                     yasier_{' '}
                                 </h2>
                                 <p className="wave text-2xl select-none sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl origin-bottom-right " >
                                     👋🏽
                                 </p>
                             </div>
-                            <p className="mt-12 text-base md:text-[1.1rem] lg:text-lg tracking-wide max-w-lg ">
+                            <p className="mt-12 text-base md:text-[1.1rem] lg:text-lg xl:text-xl tracking-[0.02rem] max-w-lg ">
                                 web developer,‎ <span className="font-semibold text-blue-400 ">G</span>
                                 <span className="font-semibold text-red-400">o</span>
                                 <span className="font-semibold text-yellow-500">o</span>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *::selection {
     @apply bg-emerald-100 dark:bg-purple-400/70;
 }
