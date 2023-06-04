@@ -12,6 +12,7 @@ const Header = () => {
         { name: 'work', link: '/work' },
         { name: 'about', link: '/about' },
         { name: 'tech', link: '/tech' },
+        { name: 'mark', link: '/mark' },
     ];
     const [isScrolled, setIsScrolled] = useState(false);
     let [open, setOpen] = useState(false);
@@ -128,11 +129,11 @@ const Header = () => {
                     ))}
                     <li
                         key={4}
-                        className="md:ml-8  text-base xl:text-[1.1rem] font-regular md:my-0 my-7"
+                        className="md:ml-8  text-base lg:text-lg font-regular md:my-0 my-7"
                     >
-                        <a href="/resume.pdf" target="blank" rel="noreferrer" className="text-gray-800 dark:text-white hover:text-purple-500 dark:hover:text-purple-500 duration-500"
+                        <a href="/resume.pdf" target="blank" rel="noreferrer" className="text-gray-800 font-semibold dark:text-white hover:text-purple-500 dark:hover:text-purple-500 duration-500"
                         >
-                            Resume
+                            resume
                         </a>
                     </li>
                 </ul>
