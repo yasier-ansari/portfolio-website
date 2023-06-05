@@ -51,8 +51,6 @@ const createUserDocument = async (user) => {
             imgUrl: user.photoURL,
             githubUsername: user.reloadUserInfo.screenName,
             createdAt: serverTimestamp(),
-            marked: false,
-            comment: 0
         });
     }
 };

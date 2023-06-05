@@ -1,15 +1,15 @@
 import { useContext, useEffect, useRef, useState } from "react";
-import { useTheme } from "next-themes";
 import { AuthContext } from "../utils/AuthContext";
-import Head from "next/head";
 import Image from "next/image";
 import { FiGithub, FiPenTool } from 'react-icons/fi'
 import Im from '../public/pfpimg.jpeg'
 import { createTweet, fetchTweetsWithUserProfiles } from "../utils/config";
 import useSession from "../utils/useSession";
-import { toast } from "react-hot-toast";
 import { NextSeo } from "next-seo";
 import seoConfig from "../utils/seoConfig";
+import { toast } from "react-hot-toast";
+// import { toast } from "react-toastify";
+
 
 const Mark = () => {
     const { userInfo, authReady } = useContext(AuthContext);
@@ -17,53 +17,61 @@ const Mark = () => {
     const [loadDone, setLoadDone] = useState(false);
     const { login, logout } = useSession();
     const [tweetContent, setTweetContent] = useState("");
-    const [tweetLimitExceeded, setTweetLimitExceeded] = useState(false);
+    const [tweetLimitExceeded, setTweetLimitExceeded] = useState(0);
     const [tweetCooldown, setTweetCooldown] = useState(false);
     const [textareaheight, setTextareaheight] = useState(1);
     const [data, setData] = useState(null);
     const [flag, setFlag] = useState(false);
     const textAreaRef = useRef(null);
-    const tweet = [{}];
 
     const handleMark = async (e) => {
         e.preventDefault();
-        if (userInfo?.tweetCount >= 5) {
-            setTweetLimitExceeded(true);
+        if (tweetLimitExceeded >= 5) {
             toast(
                 "Only 5 comments can be posted per user",
                 {
-                    duration: 2000,
+                    duration: 1500,
                     icon: "😓"
                 }
             );
             return
-        } else if (userInfo?.lastTweetAt &&
-            Date.now() - userInfo.lastTweetAt.toMillis() < 24 * 60 * 60 * 1000) {
-            setTweetCooldown(true)
+        } else if (tweetCooldown) {
             toast(
                 "Only 1 comments per 24 hours",
                 {
-                    duration: 2000,
+                    duration: 1500,
                     icon: "😓"
                 }
             );
             return
         } else {
             try {
-                await createTweet(userInfo, tweetContent);
-                setTweetCooldown(true);
-                toast("Mark posted successfully", {
-                    icon: "🥳",
-                    duration: 2000
-                })
-                setTweetContent("");
-                setFlag(!flag);
+                if (tweetContent === "") {
+                    toast("Mark a valid/non-empty post", {
+                        icon: "😐",
+                        duration: 2000
+                    })
+                    return
+                } else {
+                    await createTweet(userInfo, tweetContent);
+                    setTweetCooldown(true);
+                    const incr = tweetLimitExceeded + 1
+                    setTweetLimitExceeded(incr);
+                    toast("Mark posted successfully", {
+                        icon: "🥳",
+                        duration: 2000
+                    })
+                    setTweetContent("");
+                    setFlag(!flag);
+                }
             }
             catch (e) {
                 toast(`${e.message}`, { duration: 1500, icon: "🤒" })
                 console.log(e);
             }
         }
+        setTweetCooldown(true);
+        setTweetLimitExceeded(tweetLimitExceeded => tweetLimitExceeded + 1)
     }
     const inputHandler = (e) => {
         setTweetContent(e.target.value);
@@ -90,11 +98,7 @@ const Mark = () => {
             } else {
                 setTweetCooldown(false);
             }
-            if (userInfo?.tweetCount >= 5) {
-                setTweetLimitExceeded(true);
-            } else {
-                setTweetLimitExceeded(false);
-            }
+            setTweetLimitExceeded(userInfo?.tweetCount);
             setLoadDone(false);
         } else {
             setLoggedin(false)
@@ -109,8 +113,9 @@ const Mark = () => {
     }
     useEffect(() => {
         getTweet();
-    }, [flag])
-    console.log(data);
+    }, [flag, tweetCooldown, tweetLimitExceeded]);
+    console.log(tweetCooldown, "cooldown");
+    console.log(tweetLimitExceeded, "tweet limit");
     return (
         <>
             <NextSeo {...seoConfig['/mark']} />
@@ -143,7 +148,7 @@ const Mark = () => {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="flex flex-col w-[85%] sm:w-[80%] md:w-[65%] max-w-2xl justify-center items-center mt-2 dark:bg-zinc-200/20 bg-zinc-200/60 border dark:border-stone-100/20 border-stone-300 shadow-lg rounded-xl p-5 lg:p-8 " >
+                                <div className="flex flex-col w-[85%] sm:w-[80%] md:w-[65%] max-w-2xl justify-center items-center mt-2 dark:bg-zinc-300/20 bg-zinc-200/60 border dark:border-stone-100/20 border-stone-300 shadow-lg rounded-xl p-5 lg:p-8 " >
                                     <form className="w-full mx-auto flex flex-col items-center"
                                         onSubmit={(e) => handleMark(e)}>
                                         <textarea
@@ -187,7 +192,7 @@ const Mark = () => {
                         </div>
                         <div className="flex flex-col justify-center space-y-4 items-center ">
                             <div className="flex mx-auto items-center bg-gradient-to-tr mt-4 px-4 md:px-6 lg:px-10 py-2 md:py-4 lg:py-6 rounded-lg flex-col space-y-4 md:space-y-6 lg:space-y-8 ">
-                                <div key={-1} className="flex flex-col w-[85%] sm:w-[75%] md:w-[65%] max-w-4xl p-4 md:p-5 lg:p-6 space-y-4 rounded-xl border-[0.1px] border-stone-300 shadow-xl  dark:border-zinc-500  " >
+                                <div key={-1} className="flex flex-col  w-[95%] sm:w-[85%] md:w-[65%] max-w-3xl p-4 md:p-5 lg:p-6 space-y-4 rounded-xl border-[0.1px] border-stone-300 shadow-xl  dark:border-zinc-500  " >
                                     <div className="flex justify-between items-center" >
                                         <div className="flex items-center h-max " >
                                             <Image src={Im} width={50} height={50} alt="user" className="rounded-full mr-3" />
@@ -196,7 +201,7 @@ const Mark = () => {
                                                 <p>@yasier-ansari</p>
                                             </div>
                                         </div>
-                                        <a href={`https://github.com/yasier-ansari`} className="rounded-lg p-2 lg:p-3 bg-purple-100 " target="_blank" rel="noreferrer" >
+                                        <a href={`https://github.com/yasier-ansari`} className="rounded-lg p-2 lg:p-3 bg-purple-100 dark:bg-purple-100/20 " target="_blank" rel="noreferrer" >
                                             <FiGithub className="w-4 h-4 md:w-5 md:h-5 xl:w-6 xl:h-6 " />
                                         </a>
                                     </div>
@@ -204,7 +209,7 @@ const Mark = () => {
                                 </div>
                                 {
                                     data?.map((el, idx) => (
-                                        <div key={idx} className="flex flex-col w-[85%] sm:w-[75%] md:w-[65%] max-w-5xl p-4 md:p-5 lg:p-6 space-y-4 rounded-xl border-[0.1px] border-stone-300 shadow-xl  dark:border-zinc-500  " >
+                                        <div key={idx} className="flex flex-col w-[95%] sm:w-[85%] md:w-[65%] max-w-3xl p-4 md:p-5 lg:p-6 space-y-4 rounded-xl border-[0.1px] border-stone-300 shadow-xl  dark:border-zinc-500  " >
                                             <div className="flex justify-between items-center" >
                                                 <div className="flex items-center h-max " >
                                                     <Image src={el?.userProfile.imgUrl} width={50} height={50} alt="user" className="rounded-full mr-3" />
@@ -213,7 +218,7 @@ const Mark = () => {
                                                         <p>@{el?.userProfile.githubUsername}</p>
                                                     </div>
                                                 </div>
-                                                <a href={`https://github.com/${el?.userProfile?.githubUsername}`} className="rounded-lg p-2 lg:p-3 bg-purple-100 " target="_blank" rel="noreferrer" >
+                                                <a href={`https://github.com/${el?.userProfile?.githubUsername}`} className="rounded-lg p-2 lg:p-3 bg-purple-100 dark:bg-purple-100/20 " target="_blank" rel="noreferrer" >
                                                     <FiGithub className="w-4 h-4 md:w-5 md:h-5 xl:w-6 xl:h-6 " />
                                                 </a>
                                             </div>
