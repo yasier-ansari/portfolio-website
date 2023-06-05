@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { ThemeProvider } from "next-themes";
 import { AuthContextProvider } from "../utils/AuthContext";
-import { Toaster } from "react-hot-toast";
+import { Toaster } from 'react-hot-toast';
 
 
 function MyApp({ Component, pageProps }) {
@@ -15,11 +15,12 @@ function MyApp({ Component, pageProps }) {
                         <Header />
                         <Component {...pageProps} />
                         <Footer />
-                        <Toaster />
                     </main>
+                    <Toaster />
                 </AuthContextProvider>
             </ThemeProvider >
         </>
     );
 }
 export default MyApp;
+
