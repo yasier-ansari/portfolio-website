@@ -25,14 +25,13 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className=" flex select-none text-sm  py-16 mt-16 flex-col h-max items-center mx-auto justify-center">
-            <div className="flex justify-center space-x-4 md:space-x-6 dark:text-white/70 text-gray-400 text-xs sm:text-sm lg:text-md xl:text-lg mt-2">
+        <div className=" flex select-none text-sm  py-16 flex-col h-max items-center mx-auto justify-center">
+            <div className="flex justify-center space-x-4 md:space-x-6 dark:text-white/70 text-gray-500 text-sm lg:text-md xl:text-lg mt-2">
                 <Link href="/work" className=" dark:hover:text-purple-400 hover:text-purple-600 font-[500]" > work </Link>
                 <Link href="/about" className=" dark:hover:text-purple-400 hover:text-purple-600 font-[500]" > about </Link>
                 <Link href="/tech" className=" dark:hover:text-purple-400 hover:text-purple-600 font-[500]" > tech </Link>
-                <a href="https://datree.yasier.in/" className=" dark:hover:text-purple-400 hover:text-purple-600 font-[500]" > datree </a>
+                <Link href="/mark" className=" dark:hover:text-purple-400 hover:text-purple-600 font-[500]" > mark </Link>
                 <Link href="/resume.pdf" target="blank" rel="noreferrer" className=" dark:hover:text-purple-400 hover:text-purple-600 font-[500]" > resume </Link>
-
             </div>
             <a href="https://github.com/yasier-ansari/portfolio-website" target="blank" rel="noreferrer" className="flex flex-col text-center group hover:text-purple-800 w-max hover:font-black items-center text-gray-600 text-[0.6rem] sm:text-xs md:text-sm lg:text-md mt-8 md:mt-12 ">
                 <div onMouseOut={handleMouseOut} onMouseOver={handleMouseOver} className="relative transition-all ease-in-out duration-1000   ">

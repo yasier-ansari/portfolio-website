@@ -3,6 +3,14 @@ module.exports = {
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
+            screens: {
+                'xs': '460px',
+                'sm': '640px',
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+                '2xl': '1536px',
+            },
             keyframes: {
                 text: {
                     '0%, 100%': {
@@ -12,6 +20,11 @@ module.exports = {
                     '50%': {
                         'background-size': '200% 200%',
                         'background-position': 'right center',
+                    },
+                },
+                shimmer: {
+                    "100%": {
+                        transform: "translateX(100%)",
                     },
                 },
                 mainBlob: {
@@ -62,7 +75,7 @@ module.exports = {
 
             fontFamily: {
                 space: ['Space Mono', 'monospace', 'sans-serif'],
-                app: ['Sedgwick Ave', 'cursive'],
+                app: ['Nanum Pen Script', 'cursive'],
                 out: ['Outfit', 'Inter', 'sans-serif'],
             },
         },

@@ -20,8 +20,8 @@ export const AuthContextProvider = ({ children }) => {
             } else {
                 setUserInfo(null);
             }
+            setAuthReady(true);
         });
-        setAuthReady(true);
         return unsubscribe;
     }, []);
 
@@ -32,6 +32,7 @@ export const AuthContextProvider = ({ children }) => {
                 setError,
                 userInfo,
                 setUserInfo,
+                authReady
             }}
         >
             {children}

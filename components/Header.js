@@ -67,13 +67,13 @@ const Header = () => {
         <nav
             ref={touchRef}
             className={`${isScrolled && 'bg-opacity-[0.7] shadow-md drop-shadow-lg '
-                } font-medium duration-500 bg-opacity-90 transition-all linear z-40 dark:text-white w-[75%] sm:w-[75%] md:w-[70%] lg:w-[55%] xl:w-[50%] max-w-6xl mx-auto  bg-white dark:bg-[#353535] drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
+                } font-medium duration-500 bg-opacity-90 transition-all linear z-40 dark:text-white w-[75%] sm:w-[75%] lg:w-[65%] xl:w-[55%] max-w-6xl mx-auto  bg-white dark:bg-[#353535] drop-shadow-xs backdrop-blur-sm top-4 sticky rounded-2xl `}
         >
-            <div className="flex justify-between md:space-x-10 lg:space-x-12 xl:space-x-16 md:flex items-center place-items-center md:justify-center py-3 md:px-10 px-8">
+            <div className="flex justify-between md:space-x-10 lg:space-x-12 xl:space-x-16 md:flex items-center place-items-center md:justify-center py-3 md:px-10 px-6 xs:px-8">
                 <div className=" select-none order-2 md:order-1 cursor-pointer flex items-center text-gray-800">
                     <Link href={'/'} className="">
                         {' '}
-                        <h3 className="bg-gradient-to-tl from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-space text-xl font-bold">
+                        <h3 className="bg-gradient-to-tl from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-space text-lg sm:text-xl font-bold">
                             yasier_{' '}
                         </h3>{' '}
                     </Link>
@@ -131,7 +131,7 @@ const Header = () => {
                         key={4}
                         className="md:ml-8  text-base lg:text-lg font-regular md:my-0 my-7"
                     >
-                        <a href="/resume.pdf" target="blank" rel="noreferrer" className="text-gray-800 font-semibold dark:text-white hover:text-purple-500 dark:hover:text-purple-500 duration-500"
+                        <a href="/resume.pdf" target="blank" rel="noreferrer" className="text-purple-800 font-semibold dark:text-white/60 hover:text-purple-500 dark:hover:text-purple-500 duration-500"
                         >
                             resume
                         </a>

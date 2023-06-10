@@ -10,7 +10,7 @@
 ::-webkit-scrollbar {
     /* height: 10px; */
   /* border-radius: 1px solid #d5d5d5; */
-    @apply h-2 w-[10px] rounded-sm border-gray-100/20;
+    @apply h-2 w-[8px] rounded-sm border-gray-100/20;
 }
 
 /* Track */
@@ -121,6 +121,8 @@
         background-image: url('/header-gradient.svg'), url('/footer-gradient.svg');
         background-repeat: no-repeat;
         background-position: center top, center bottom;
+        height: full;
+        width: full;
         background-size: 1400px;
     }
 
