@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
                     <Toaster /> */}
                     <div className={` relative land flex flex-col w-full h-full font-out min-h-screen `} >
                         <Header />
-                        <main className="flex w-full grow h-full justify-center mx-auto pt-8" >
+                        <main className="flex w-full grow h-full justify-center mx-auto sm:pt-8" >
                             <Component {...pageProps} />
                         </main>
                         <Footer />

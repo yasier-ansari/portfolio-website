@@ -21,10 +21,10 @@ import { RxBorderDotted } from 'react-icons/rx';
 import { CldImage } from "next-cloudinary";
 const WorkCard = (props) => {
     return (
-        <div className="flex flex-col xs:flex-row h-full space-y-4 sm:space-y-0 max-w-3xl cursor-pointer sm:h-40 md:h-40 lg:h-44 xl:h-48 bg-gradient-to-tr  dark:from-[#eefcff20] dark:via-[#faf5ff30] dark:to-[#fff2ec15] from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:bg-gradient-to-tr lg:hover:dark:from-[#eefcff20] lg:hover:dark:via-[#faf5ff30] lg:hover:dark:to-[#fff2ec15]  p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
+        <div className="flex flex-col xs:flex-row h-full space-y-4 xs:space-y-0 max-w-3xl cursor-pointer sm:h-40 md:h-40 lg:h-44 xl:h-48 bg-gradient-to-tr  dark:from-[#eefcff20] dark:via-[#faf5ff30] dark:to-[#fff2ec15] from-[#eefcff] via-[#faf5ff] to-[#fff2ec] lg:bg-gradient-to-tr lg:hover:dark:from-[#eefcff20] lg:hover:dark:via-[#faf5ff30] lg:hover:dark:to-[#fff2ec15]  p-4 w-full overflow-hidden rounded-lg md:rounded-2xl lg:rounded-3xl  ">
             <Link
                 href={`${props.link}`}
-                className="relative shadow-md border border-purple-200 drop-shadow-xl h-32 xs:basis-[40%] rounded-lg md:rounded-2xl lg:rounded-3xl overflow-hidden "
+                className="relative flex items-center shadow-md border border-purple-200 drop-shadow-xl h-32 xs:basis-[40%] rounded-lg md:rounded-2xl lg:rounded-3xl overflow-hidden "
             >
                 <CldImage
                     src={props.img}
