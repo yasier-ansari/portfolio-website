@@ -27,7 +27,7 @@ const Experience = () => {
                     <PageDivider text={"Experience"} />
                 </div>
             </div>
-            <div className="flex flex-col relative space-y-16  xs:w-[80%] sm:w-[75%] md:w-full md:space-y-10 lg:space-y-8 items-center">
+            <div className="flex flex-col relative space-y-16 w-[90%] xs:w-[85%] sm:w-[75%] md:w-full md:space-y-10 lg:space-y-8 items-center">
                 <div className="absolute left-[0%] md:left-[10%] lg:left-[50%] w-[3px]  h-full top-8 md:top-4 bg-gradient-to-b from-teal-400 via-purple-400 to-orange-400  rounded-full"></div>
                 <div className="self-start drop-shadow-2xl  flex flex-col space-y-4 mx-6 md:mx-20 lg:mx-0 md:w-[70%] lg:w-[45%] max-w-2xl rounded-[1.4rem] p-4 rounded-tl-none md:rounded-tr-none lg:rounded-tl-[2rem] hover:bg-gradient-to-tr  dark:hover:from-[#ffeff715] hover:from-[#ffeff7] dark:hover:to-[#F0F6FE20] hover:to-[#F0F6FE] transition ease-in-out duration-500 hover:shadow-xl transform hover:-translate-x-2  bg-gradient-to-tr from-[#ffeff7] to-[#F0F6FE] dark:from-[#ffeff720] dark:to-[#f0f6fe25] lg:bg-none ">
                     <div className="mx-auto text-center font-bold font-urbanist text-xl text-teal-500 ">

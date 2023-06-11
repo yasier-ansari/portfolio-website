@@ -2,6 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { AuthContext } from "../utils/AuthContext";
 import Image from "next/image";
 import { FiGithub, FiPenTool } from 'react-icons/fi'
+import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 import Im from '../public/pfpimg.jpeg'
 import { createTweet, fetchTweetsWithUserProfiles } from "../utils/config";
 import useSession from "../utils/useSession";
@@ -19,6 +20,7 @@ const Mark = () => {
     const [loadDone, setLoadDone] = useState(false);
     const { login, logout } = useSession();
     const [tweetContent, setTweetContent] = useState("");
+    const [tweetDisable, setTweetDisable] = useState(false);
     const [tweetLimitExceeded, setTweetLimitExceeded] = useState(0);
     const [tweetCooldown, setTweetCooldown] = useState(false);
     const [textareaheight, setTextareaheight] = useState(1);
@@ -28,6 +30,7 @@ const Mark = () => {
 
     const handleMark = async (e) => {
         e.preventDefault();
+        setTweetDisable(true);
         if (tweetLimitExceeded >= 5) {
             toast(
                 "Only 5 comments can be posted per user",
@@ -36,7 +39,6 @@ const Mark = () => {
                     icon: "😓"
                 }
             );
-            return
         } else if (tweetCooldown) {
             toast(
                 "Only 1 comments per 24 hours",
@@ -45,7 +47,6 @@ const Mark = () => {
                     icon: "😓"
                 }
             );
-            return
         } else {
             try {
                 if (tweetContent === "") {
@@ -53,7 +54,6 @@ const Mark = () => {
                         icon: "😐",
                         duration: 1500
                     })
-                    return
                 } else {
                     await createTweet(userInfo, tweetContent);
                     setTweetCooldown(true);
@@ -72,6 +72,9 @@ const Mark = () => {
                 console.log(e);
             }
         }
+        setTimeout(() => {
+            setTweetDisable(false);
+        }, 2000);
         setTweetCooldown(true);
         setTweetLimitExceeded(tweetLimitExceeded => tweetLimitExceeded + 1)
     }
@@ -178,8 +181,8 @@ const Mark = () => {
                                             className="w-[100%] rounded-lg resize-none leading-normal flex items-center text-sm lg:text-base 2xl:text-lg dark:bg-[#333] bg-white focus:outline-gray-400 dark:focus:outline-gray-100/20 dark:text-white p-2 md:p-3 xl:p-4 "
                                         ></textarea>
                                         <span className="self-start dark:text-gray-400 text-gray-500 px-2 mt-2 mb-3 text-xs md:text-sm" > {200 - tweetContent.length} chracters remaining</span>
-                                        <button type="submit" className=" flex items-center justify-center -mb-1 py-2 md:py-3 px-4 sm:px-5 lg:px-6 font-medium dark:text-zinc-200 text-zinc-800 bg-purple-300/50 dark:bg-purple-600/50  rounded-lg shadow-2xl border border-gray-300 group ">
-                                            mark it <FiPenTool className="ml-3 h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 rotate-90 group-hover:rotate-[135deg] transition-all duration-200 " />
+                                        <button disabled={tweetDisable} type="submit" className=" flex items-center justify-center -mb-1 py-2 md:py-3 px-4 sm:px-5 lg:px-6 font-medium dark:text-zinc-200 text-zinc-800 bg-purple-300/50 dark:bg-purple-600/50  rounded-lg shadow-2xl border border-gray-300 group ">
+                                            {tweetDisable ? <>loading <AiOutlineLoading3Quarters className="ml-3 h-3 w-3 md:stroke-2 xs:h-4 xs:w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 animate-spin" /> </> : <>mark it<FiPenTool className="ml-3 h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 rotate-90 group-hover:rotate-[135deg] transition-all duration-200 " /></>}
                                         </button>
                                     </form>
                                 </div>

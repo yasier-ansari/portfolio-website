@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <NextSeo {...seoConfig.default} />
-            <div className="  lg:min-h-screen px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto max-w-[90rem]">
+            <div className="  lg:min-h-screen xs:px-10 sm:px-20 md:px-32 lg:mb-12 lg:px-60 mx-auto">
                 <div className="lg:h-screen 2xl:h-max max-w-[90rem] mx-auto">
                     <Blob />
                     <div className=" flex flex-col justify-center  lg:flex-row md:pt-12 lg:space-x-20 items-center lg:justify-between">
@@ -24,7 +24,7 @@ export default function Home() {
                                     👋🏽
                                 </p>
                             </div>
-                            <p className="mt-12 text-base md:text-[1.1rem] lg:text-lg xl:text-xl tracking-[0.02rem] max-w-lg ">
+                            <p className="mt-12 px-10 xs:px-0 text-[0.9rem] xs:text-base md:text-[1.1rem] lg:text-lg xl:text-xl tracking-[0.02rem] max-w-lg ">
                                 web developer,‎ <span className="font-semibold text-blue-400 ">G</span>
                                 <span className="font-semibold text-red-400">o</span>
                                 <span className="font-semibold text-yellow-500">o</span>

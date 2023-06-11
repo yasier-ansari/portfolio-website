@@ -21,7 +21,7 @@ const Header = () => {
         if (router != link) {
             setTimeout(() => {
                 setOpen(false);
-            }, 700);
+            }, 100);
         }
     }
     const useOutsideAlerter = (ref) => {
