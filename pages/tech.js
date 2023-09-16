@@ -176,7 +176,7 @@ export default function Tech() {
                         experimenting tools than actually coding some senseful things 😎
                     </p>
                 </div>
-                <div class="flex mt-6 xs:mt-8 sm:hidden justify-end space-x-5 xs-space-x-6">
+                <div className="flex mt-6 xs:mt-8 sm:hidden justify-end space-x-5 xs-space-x-6">
                     <button
                         className=" visible sm:hidden font-space group bg-[#c7dada] dark:bg-[#939f9f40] h-max w-max hover:bg-[#f7eeff]  px-1 py-1 rounded-full select-none "
                         onClick={leftArrow}

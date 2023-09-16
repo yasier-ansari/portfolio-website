@@ -1,6 +1,5 @@
 const TimeRender = ({ dateObj }) => {
     const [hours, minutes, seconds] = dateObj.toDate().toLocaleTimeString().split(":");
-    console.log(dateObj.toDate().toLocaleTimeString().split(":"), "here is the data")
     const date = new Date();
     date.setUTCHours(hours);
     date.setMinutes(minutes);
