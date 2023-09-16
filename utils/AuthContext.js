@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { auth } from './config'
+import { auth, createUserDocument } from './config'
 import { fetchUserProfile } from "./config";
 
 export const AuthContext = createContext({});
@@ -14,9 +14,14 @@ export const AuthContextProvider = ({ children }) => {
         setAuthReady(false);
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             if (user) {
-                const res = await fetchUserProfile(user.uid);
-                setUserInfo(res);
-                // setUserInfo(res);
+                // console.log(user, "user");
+                const res = await fetchUserProfile(user?.uid);
+                if (!res) {
+                    const result = await createUserDocument(user);
+                    setUserInfo(result);
+                } else {
+                    setUserInfo(res);
+                }
             } else {
                 setUserInfo(null);
             }

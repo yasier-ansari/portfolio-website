@@ -18,17 +18,17 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY_2,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN_2,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID_2,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET_2,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID_2,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID_2,
+    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID_2
 };
 
 // Initialize Firebase
-export const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth();
 
@@ -40,16 +40,16 @@ export const googleProvider = new GoogleAuthProvider();
 
 
 const createUserDocument = async (user) => {
-    const q = query(collection(db, "userProfile"), where("uid", "==", user.uid));
+    const q = query(collection(db, "userProfile"), where("uid", "==", user?.uid));
     const querySnapshot = await getDocs(q);
 
     if (querySnapshot.empty) {
-        const docRef = doc(db, "userProfile", user.uid);
+        const docRef = doc(db, "userProfile", user?.uid);
         await setDoc(docRef, {
-            name: user.displayName,
-            email: user.email,
-            imgUrl: user.photoURL,
-            githubUsername: user.reloadUserInfo.screenName,
+            name: user?.displayName,
+            email: user?.email,
+            imgUrl: user?.photoURL,
+            githubUsername: user?.reloadUserInfo.screenName,
             createdAt: serverTimestamp(),
         });
     }
@@ -89,38 +89,6 @@ const createTweet = async (userInfo, tweetContent) => {
 };
 
 
-// export const fetchTweetsWithUserProfiles = async () => {
-//     try {
-//         // Fetch the tweets collection group
-//         const q = query(collection(db, 'userTweet'));
-
-//         // Get the query snapshot
-//         const querySnapshot = await getDocs(q);
-
-//         // Fetch userProfiles for each tweet
-//         const tweetsWithUserProfiles = [];
-//         for (const docSnap of querySnapshot.docs) {
-//             const tweetData = docSnap.data();
-//             const userId = tweetData.userId;
-
-//             // Fetch the userProfile for the tweet's userId
-//             const userProfileDocRef = doc(db, 'userProfile', userId);
-//             const userProfileDocSnap = await getDoc(userProfileDocRef);
-//             const userProfileData = userProfileDocSnap.data();
-
-//             // Add the tweet and userProfile data to the result array
-//             tweetsWithUserProfiles.push({
-//                 tweet: tweetData,
-//                 userProfile: userProfileData,
-//             });
-//         }
-
-//         return tweetsWithUserProfiles;
-//     } catch (error) {
-//         console.error('Error fetching tweets with userProfiles:', error);
-//         throw error;
-//     }
-// };
 const fetchTweetsWithUserProfiles = async () => {
     // Fetch all tweets
     const tweetsRef = collection(db, 'userTweet');

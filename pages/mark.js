@@ -11,11 +11,12 @@ import seoConfig from "../utils/seoConfig";
 import { toast } from "react-hot-toast";
 import TimeRender from "../components/TimeRender";
 import PageDivider from "../components/PageDivider";
+// import { PiSignOutBold } from 'react-icons/pi'
 // import { toast } from "react-toastify";
 
 
 const Mark = () => {
-    const { userInfo, authReady } = useContext(AuthContext);
+    const { userInfo, authReady, error } = useContext(AuthContext);
     const [loggedin, setLoggedin] = useState(false);
     const [loadDone, setLoadDone] = useState(false);
     const { login, logout } = useSession();
@@ -69,7 +70,6 @@ const Mark = () => {
             }
             catch (e) {
                 toast(`${e.message}`, { duration: 1500, icon: "🤒" })
-                console.log(e);
             }
         }
         setTimeout(() => {
@@ -89,7 +89,6 @@ const Mark = () => {
     const getData = async () => {
         if (userInfo) {
             const res = await fetchTweetsWithUserProfiles();
-            console.log(res);
             setData(res);
             setLoggedin(true)
             setLoadDone(false);
@@ -111,7 +110,7 @@ const Mark = () => {
     }
     useEffect(() => {
         getData();
-    }, [authReady, userInfo]);
+    }, [userInfo]);
     const getTweet = async () => {
         const res = await fetchTweetsWithUserProfiles();
         setData(res);
@@ -119,9 +118,6 @@ const Mark = () => {
     useEffect(() => {
         getTweet();
     }, [flag, tweetCooldown, tweetLimitExceeded]);
-    console.log(userInfo)
-    console.log(tweetCooldown, "cooldown");
-    console.log(tweetLimitExceeded, "tweet limit");
     return (
         <>
             <NextSeo {...seoConfig['/mark']} />
@@ -138,21 +134,21 @@ const Mark = () => {
                     </p>
                     {
                         !authReady ? (
-                            <div className="flex bg-gray-300/10 dark:bg-rose-100/20 px-4 md:px-6 lg:px-10 py-3 md:py-4 lg:pb-6 rounded-lg  relative flex-col items-center w-[85%]  sm:w-[75%] md:w-[65%] max-w-3xl space-y-4 xs:space-y-5 md:space-y-auto  jusitfy-center " >
-                                <div class=" absolute inset-0 top-[50%] left-[50%] animate-spin inline-block w-6 h-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 border-[3.5px] md:border-[4px] lg:border-[5px] border-current border-t-transparent z-20 text-purple-400 rounded-full " aria-label="loading">
+                            <div className="flex bg-gray-300/10 dark:bg-rose-100/20 px-4 md:px-6 lg:px-10 py-3 md:py-4 lg:pb-6 rounded-lg  relative flex-col items-center w-[95%] xs:w-[90%] sm:w-[75%] md:w-[65%] lg:w-[50%] max-w-3xl space-y-4 xs:space-y-5 md:space-y-auto  jusitfy-center " >
+                                <div className="absolute inset-0 flex justify-center items-center">
+                                    <div className="animate-spin inline-block w-6 h-6 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 border-[3.5px] md:border-[4px] lg:border-[5px] border-current border-t-transparent z-20 text-purple-400 rounded-full" aria-label="loading"></div>
                                 </div>
-                                <div class="absolute top-0 left-0 backdrop-blur-[1.5px] h-full w-full z-10 "></div>
-                                <div className="flex animate-pulse bg-gray-200/60 dark:bg-gray-100/40 h-6 sm:h-8 md:h-10 lg:h-[2.6rem] rounded-lg shadow-lg grow w-full" >
+                                <div className="absolute top-0 left-0 backdrop-blur-[1.5px] h-full w-full z-10 "></div>
+                                <div className="flex animate-pulse bg-gray-200/60 dark:bg-gray-100/20 h-6 sm:h-8 md:h-10 lg:h-[2.6rem] rounded-lg shadow-lg grow w-full" >
                                 </div>
-                                <div className="flex animate-pulse bg-gray-100 dark:bg-gray-100/30 self-start h-3 sm:h-4 md:h-6 rounded-lg shadow-lg grow w-[50%]" >
+                                <div className="flex animate-pulse bg-gray-100 dark:bg-gray-100/10 self-start h-3 sm:h-4 md:h-6 rounded-lg shadow-lg grow w-[50%]" >
                                 </div>
-                                <div className="flex animate-pulse bg-purple-200/80 dark:bg-purple-400/40 h-6 sm:h-8 md:h-10 rounded-lg shadow-lg grow w-[60%] md:w-[40%] items-center " >
+                                <div className="flex animate-pulse bg-purple-200/80 dark:bg-purple-200/40 h-6 sm:h-8 md:h-10 rounded-lg shadow-lg grow w-[60%] md:w-[40%] items-center " >
                                 </div>
                             </div>
-
                         ) :
                             !userInfo ? (
-                                <div className="select-none flex w-[85%] sm:w-[75%] md:w-[65%] max-w-3xl justify-center items-center mt-2 text-gray-400">
+                                <div className="select-none flex w-[95%] xs:w-[90%] sm:w-[75%] md:w-[65%] lg:w-[50%] max-w-3xl justify-center items-center mt-2 text-gray-400">
                                     <div className="flex mx-auto items-center bg-gradient-to-tr px-4 md:px-6 lg:px-10 py-2 md:py-4 lg:pb-6 rounded-lg dark:from-[#eefcff20] dark:via-[#faf5ff30] dark:to-[#fff2ec15] from-[#ebeded] via-[#e7e6e8] to-[#eae6e5] lg:bg-gradient-to-tr lg:hover:dark:from-[#eefcff20] lg:hover:dark:via-[#faf5ff30] lg:hover:dark:to-[#fff2ec15] flex-col gap-2 ">
                                         <p className="dark:text-white text-black/80"> Sign in to post a message</p>
                                         <div className="flex justify-center gap-4 ">
@@ -167,9 +163,9 @@ const Mark = () => {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="flex flex-col w-[85%] sm:w-[80%] md:w-[65%] max-w-2xl justify-center items-center mt-2 dark:bg-zinc-300/20 bg-zinc-200/60 border dark:border-stone-100/20 border-stone-300 shadow-lg rounded-xl p-5 lg:p-8 " >
-                                    <form className="w-full mx-auto flex flex-col items-center"
-                                        onSubmit={(e) => handleMark(e)}>
+                                <div className="flex flex-col w-[95%] xs:w-[90%] sm:w-[75%] md:w-[65%] lg:w-[50%] max-w-3xl justify-center items-center mt-2 dark:bg-zinc-300/20 bg-zinc-200/60 border dark:border-stone-100/20 border-stone-300 shadow-lg rounded-xl p-5 lg:p-8 " >
+                                    <div className="w-full mx-auto flex flex-col items-center"
+                                    >
                                         <textarea
                                             value={tweetContent}
                                             ref={textAreaRef}
@@ -181,10 +177,15 @@ const Mark = () => {
                                             className="w-[100%] rounded-lg resize-none leading-normal flex items-center text-sm lg:text-base 2xl:text-lg dark:bg-[#333] bg-white focus:outline-gray-400 dark:focus:outline-gray-100/20 dark:text-white p-2 md:p-3 xl:p-4 "
                                         ></textarea>
                                         <span className="self-start dark:text-gray-400 text-gray-500 px-2 mt-2 mb-3 text-xs md:text-sm" > {200 - tweetContent.length} chracters remaining</span>
-                                        <button disabled={tweetDisable} type="submit" className=" flex items-center justify-center -mb-1 py-2 md:py-3 px-4 sm:px-5 lg:px-6 font-medium dark:text-zinc-200 text-zinc-800 bg-purple-300/50 dark:bg-purple-600/50  rounded-lg shadow-2xl border border-gray-300 group ">
-                                            {tweetDisable ? <>loading <AiOutlineLoading3Quarters className="ml-3 h-3 w-3 md:stroke-2 xs:h-4 xs:w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 animate-spin" /> </> : <>mark it<FiPenTool className="ml-3 h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 rotate-90 group-hover:rotate-[135deg] transition-all duration-200 " /></>}
-                                        </button>
-                                    </form>
+                                        <div className="flex justify-between space-x-12 py-3">
+                                            <button disabled={tweetDisable} onSubmit={(e) => handleMark(e)} className=" flex items-center justify-center -mb-1 py-2 md:py-3 px-4 sm:px-5 lg:px-6 font-medium dark:text-zinc-200 text-zinc-800 bg-purple-300/50 dark:bg-purple-600/50  rounded-lg shadow-2xl border border-gray-300 group ">
+                                                {tweetDisable ? <>loading <AiOutlineLoading3Quarters className="ml-3 h-3 w-3 md:stroke-2 xs:h-4 xs:w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 animate-spin" /> </> : <>mark it<FiPenTool className="ml-3 h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 rotate-90 group-hover:rotate-[135deg] transition-all duration-200 " /></>}
+                                            </button>
+                                            <button onClick={logout} className=" flex items-center justify-center -mb-1 py-2 md:py-3 px-4 sm:px-5 lg:px-6 font-medium dark:text-gray-200 text-white bg-zinc-800/50 dark:bg-zinc-950/50  rounded-lg shadow-2xl border border-gray-300 group ">
+                                                Log out<FiPenTool className="ml-3 h-4 w-4 md:h-5 md:w-5 xl:h-6 xl:w-6 rotate-90 group-hover:rotate-[135deg] transition-all duration-200 " />
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             )
                     }

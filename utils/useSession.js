@@ -15,28 +15,28 @@ export default function useSession() {
         try {
             const res = await signInWithRedirect(auth, provider);
             if (!res) {
+                setError("Could not complete signup");
                 throw new Error("Could not complete signup");
             }
-            console.info(res.user, "here user");
             const rep = await fetchUserProfile(res?.user?.uid);
             if (rep) {
                 setUserInfo(rep)
+                setSession(rep)
             } else {
                 const result = await createUserDocument(res?.user);
                 setUserInfo(result)
+                setSession(result)
             }
         } catch (error) {
-            console.log(error);
             setError(error.message);
         }
     };
     const logout = async () => {
         try {
             await signOut(auth);
-            console.log("user logged out");
             setUserInfo(null);
         } catch (error) {
-            console.log(error.message);
+            setError(error.message);
         }
     };
     return { login, session, setSession, logout };
